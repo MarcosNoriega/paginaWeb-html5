@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">HTML5</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Html <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="css.html">Css</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript.html">Javascript</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    <div class="container mt-4">
+        <h1>Html5</h1>
+        <hr>
+
+        <section>
+            <div class="card sombra">
+                <div class="card-body">
+                        <h3>1.1 Componentes básicos</h3>
+                        <hr>
+                        <p>HTML5 provee básicamente tres características: estructura, estilo y funcionalidad.
+                                Nunca fue declarado oficialmente pero, incluso cuando algunas APIs (Interface de Programación de
+                                Aplicaciones)
+                                y la especificación de CSS3 por completo no son parte del mismo, HTML5 es considerado el producto de la
+                                combinación de
+                                HTML, CSS y Javascript. Estas tecnologías son altamente dependientes y actúan como una sola unidad
+                                organizada
+                                bajo la
+                                especificación de HTML5. HTML está a cargo de la estructura, CSS presenta esa estructura y su contenido en
+                                la
+                                pantalla y
+                                Javascript hace el resto que (como veremos más adelante) es extremadamente significativo.</p>
+                    
+                            <p>Más allá de esta integración, la estructura sigue siendo parte esencial de un documento.
+                                La misma provee los elementos necesarios para ubicar contenido estático o dinámico,
+                                y es aspecto básico como la estructura se vuelve parte vital del documento. Ahora la estructura debe
+                                proveer
+                                forma,
+                                organización y flexibilidad, y debe ser tan fuerte como los fundamentos de un edificio.</p>
+                    
+                            <p>Para trabajar y crear sitios webs y aplicaciones con HTML5, necesitamos saber primero cómo esa estructura es
+                                construida.
+                                Crear fundamentos fuertes nos ayudará más adelante a aplicar el resto de los componentes para aprovechar
+                                completamente
+                                estas nuevas tecnologías.</p>
+                    
+                            <p>Por lo tanto, empecemos por lo básico, paso a paso. En este primer capítulo aprenderá cómo construir una
+                                plantilla para
+                                futuros proyectos usando los nuevos elementos HTML introducidos en HTML5.</p>
+                    
+                            <p class="justificado"><b>Ejercicio:</b> Cree un archivo de texto vacío utilizando su editor de textos
+                                favorito para probar cada código presentado
+                                en las siguientes secciones. Esto lo ayudará a recordar las nuevas etiquetas HTML y acostumbrarse a ellas.</p>
+                    
+                            <p class="justificado"><b>Conceptos básicos:</b> Un documento HTML es un archivo de texto. Si usted no posee
+                                ningún
+                                programa para desarrollo web, puede simplemente
+                                utilizar el Bloc de Notas de Windows o cualquier otro editor de textos. El archivo debe ser grabado con la
+                                extensión .html y el nombre que desee
+                                (por ejemplo, micodigo.html ).</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-4">
+            <div class="card sombra">
+                <div class="card-body">
+                    <h3>1.2 Estructura global</h3>
+                    <hr>
+                    <p>Los documentos HTML se encuentran estrictamente organizados. Cada parte del documento está diferenciada,
+                        declarada y determinada por etiquetas específicas.
+                        En esta parte del capítulo vamos a ver cómo construir la estructura global de un documento HTML y los
+                        nuevos
+                        elementos semánticos incorporados en HTML5.</p>
+
+                    <h4>&lt;!DOCTYPE&gt;</h4>
+
+                    <p>En primer lugar necesitamos indicar el tipo de documento que estamos creando. Esto en HTML5 es extremadamente 
+                        sencillo:</p>
+
+                    <div class="codigo">
+                        <code>&lt;!DOCTYPE html&gt;</code>
+
+                    </div>
+
+                    <p class="justificado"><b>IMPORTANTE:</b> Esta línea debe ser la primera línea del archivo, sin espacios o líneas 
+                        que la precedan. De esta forma, el modo estándar del navegador es activado y las incorporaciones de HTML5 son 
+                        interpretadas siempre que sea posible, o ignoradas en caso contrario.</p>
+
+                    <h4>&lt;html&gt;</h4>
+                    
+                    <p>Luego de declarar el tipo de documento, debemos comenzar a construir la estructura HTML. Como siempre, la estructura 
+                        tipo árbol de este lenguaje tiene su raíz en el elemento &lt;html&gt;. Este elemento envolverá al resto del código:</p>
+                        <div class="codigo">
+                            <code>
+                                    &lt;!DOCTYPE html&gt;<br>
+                                    &lt;html lang=”es”&gt;<br>
+                                    &lt;head&gt;<br>
+                                    <br>
+                                    &lt;/head&gt;<br>
+                                    &lt;/html&gt;<br>
+                            </code>
+
+                        </div>
+
+                    <p>La etiqueta no cambió desde versiones anteriores y su propósito sigue siendo exactamente el mismo. Dentro de las 
+                        etiquetas &lt;head&gt; definiremos el título de nuestra página web, declararemos el set de caracteres correspondiente, 
+                            proveeremos información general acerca del documento e incorporaremos los archivos externos con estilos, códigos 
+                            Javascript o incluso imágenes necesarias para generar la página en la pantalla. Excepto por el título y algunos 
+                            íconos, el resto de la información incorporada en el documento entre estas etiquetas es invisible para el usuario.</p>
+            
+                    <h4>Organización</h4>
+            
+                    <p>La Figura 1-1 representa un diseño común encontrado en la mayoría de los sitios webs estos días. A pesar
+                        del
+                        hecho de que cada diseñador crea sus propios diseños,
+                        en general podremos identificar las siguientes secciones en cada sitio web estudiado:</p>
+
+            
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <figure>
+                                <img src="img/diseño de una web.jpg" alt="Representación visual de un clásico diseño web.">
+                        
+                                <figcaption>Figura 1-1. Representación visual de un clásico diseño web.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-4">
+            <div class="card">
+                <div class="card-body">
+                    <h1>Comentarios</h1>
+                    <hr>
+                    
+        
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>Deja tu comentario</h5>
+                                </div>
+
+                                <div class="card-body">
+                                        <form action="">
+                                                <div class="form-group">
+                                                    <label for="">Nombre</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                        
+                                                <div class="form-group">
+                                                    <label for="">Apellido</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                        
+                                                <div class="form-group">
+                                                    <label for="">Mail</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                        
+                                                <div class="form-group">
+                                                    <label for="">Mensaje</label>
+                                                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                                                </div>
+                                            </form>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+
+        
+    </div>
+    
+</body>
+</html>
