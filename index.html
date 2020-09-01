@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,515 +40,617 @@
         <h1>Html5</h1>
         <hr>
 
-        <section>
-            <article>
-                <div class="card sombra">
-                    <div class="card-body">
-                        <h3>1.1 Componentes básicos</h3>
-                        <hr>
-                        <p>HTML5 provee básicamente tres características: estructura, estilo y funcionalidad.
-                            Nunca fue declarado oficialmente pero, incluso cuando algunas APIs (Interface de
-                            Programación
-                            de
-                            Aplicaciones)
-                            y la especificación de CSS3 por completo no son parte del mismo, HTML5 es considerado el
-                            producto de la
-                            combinación de
-                            HTML, CSS y Javascript. Estas tecnologías son altamente dependientes y actúan como una sola
-                            unidad
-                            organizada
-                            bajo la
-                            especificación de HTML5. HTML está a cargo de la estructura, CSS presenta esa estructura y
-                            su
-                            contenido en
-                            la
-                            pantalla y
-                            Javascript hace el resto que (como veremos más adelante) es extremadamente significativo.</p>
-
-                        <p>Más allá de esta integración, la estructura sigue siendo parte esencial de un documento.
-                            La misma provee los elementos necesarios para ubicar contenido estático o dinámico,
-                            y es aspecto básico como la estructura se vuelve parte vital del documento. Ahora la
-                            estructura
-                            debe
-                            proveer
-                            forma,
-                            organización y flexibilidad, y debe ser tan fuerte como los fundamentos de un edificio.</p>
-
-                        <p>Para trabajar y crear sitios webs y aplicaciones con HTML5, necesitamos saber primero cómo
-                            esa
-                            estructura es
-                            construida.
-                            Crear fundamentos fuertes nos ayudará más adelante a aplicar el resto de los componentes
-                            para
-                            aprovechar
-                            completamente
-                            estas nuevas tecnologías.</p>
-
-                        <p>Por lo tanto, empecemos por lo básico, paso a paso. En este primer capítulo aprenderá cómo
-                            construir una
-                            plantilla para
-                            futuros proyectos usando los nuevos elementos HTML introducidos en HTML5.</p>
-
-                        <p class="justificado"><b>Ejercicio:</b> Cree un archivo de texto vacío utilizando su editor de
-                            textos
-                            favorito para probar cada código presentado
-                            en las siguientes secciones. Esto lo ayudará a recordar las nuevas etiquetas HTML y
-                            acostumbrarse a ellas.</p>
-
-                        <p class="justificado"><b>Conceptos básicos:</b> Un documento HTML es un archivo de texto. Si
-                            usted
-                            no posee
-                            ningún
-                            programa para desarrollo web, puede simplemente
-                            utilizar el Bloc de Notas de Windows o cualquier otro editor de textos. El archivo debe ser
-                            grabado con la
-                            extensión .html y el nombre que desee
-                            (por ejemplo, micodigo.html ).</p>
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="mt-4">
-                <div class="card sombra">
-                    <div class="card-body">
-                        <h3>1.2 Estructura global</h3>
-                        <hr>
-                        <p>Los documentos HTML se encuentran estrictamente organizados. Cada parte del documento está
-                            diferenciada,
-                            declarada y determinada por etiquetas específicas.
-                            En esta parte del capítulo vamos a ver cómo construir la estructura global de un documento
-                            HTML
-                            y los
-                            nuevos
-                            elementos semánticos incorporados en HTML5.</p>
-
-                        <h4>&lt;!DOCTYPE&gt;</h4>
-
-                        <p>En primer lugar necesitamos indicar el tipo de documento que estamos creando. Esto en HTML5
-                            es
-                            extremadamente
-                            sencillo:</p>
-
-                        <div class="codigo">
-                            <code>&lt;!DOCTYPE html&gt;</code>
-
+        <div class="row">
+            <div class="col-md-9">
+                <section>
+                    <article>
+                        <div class="card sombra">
+                            <div class="card-body">
+                                <h3 id="basicos">1.1 Componentes básicos</h3>
+                                <hr>
+                                <p>HTML5 provee básicamente tres características: estructura, estilo y funcionalidad.
+                                    Nunca fue declarado oficialmente pero, incluso cuando algunas APIs (Interface de
+                                    Programación
+                                    de
+                                    Aplicaciones)
+                                    y la especificación de CSS3 por completo no son parte del mismo, HTML5 es considerado el
+                                    producto de la
+                                    combinación de
+                                    HTML, CSS y Javascript. Estas tecnologías son altamente dependientes y actúan como una sola
+                                    unidad
+                                    organizada
+                                    bajo la
+                                    especificación de HTML5. HTML está a cargo de la estructura, CSS presenta esa estructura y
+                                    su
+                                    contenido en
+                                    la
+                                    pantalla y
+                                    Javascript hace el resto que (como veremos más adelante) es extremadamente significativo.</p>
+        
+                                <p>Más allá de esta integración, la estructura sigue siendo parte esencial de un documento.
+                                    La misma provee los elementos necesarios para ubicar contenido estático o dinámico,
+                                    y es aspecto básico como la estructura se vuelve parte vital del documento. Ahora la
+                                    estructura
+                                    debe
+                                    proveer
+                                    forma,
+                                    organización y flexibilidad, y debe ser tan fuerte como los fundamentos de un edificio.</p>
+        
+                                <p>Para trabajar y crear sitios webs y aplicaciones con HTML5, necesitamos saber primero cómo
+                                    esa
+                                    estructura es
+                                    construida.
+                                    Crear fundamentos fuertes nos ayudará más adelante a aplicar el resto de los componentes
+                                    para
+                                    aprovechar
+                                    completamente
+                                    estas nuevas tecnologías.</p>
+        
+                                <p>Por lo tanto, empecemos por lo básico, paso a paso. En este primer capítulo aprenderá cómo
+                                    construir una
+                                    plantilla para
+                                    futuros proyectos usando los nuevos elementos HTML introducidos en HTML5.</p>
+        
+                                <p class="justificado"><b>Ejercicio:</b> Cree un archivo de texto vacío utilizando su editor de
+                                    textos
+                                    favorito para probar cada código presentado
+                                    en las siguientes secciones. Esto lo ayudará a recordar las nuevas etiquetas HTML y
+                                    acostumbrarse a ellas.</p>
+        
+                                <p class="justificado"><b>Conceptos básicos:</b> Un documento HTML es un archivo de texto. Si
+                                    usted
+                                    no posee
+                                    ningún
+                                    programa para desarrollo web, puede simplemente
+                                    utilizar el Bloc de Notas de Windows o cualquier otro editor de textos. El archivo debe ser
+                                    grabado con la
+                                    extensión .html y el nombre que desee
+                                    (por ejemplo, micodigo.html ).</p>
+                            </div>
                         </div>
-
-                        <p class="justificado"><b>IMPORTANTE:</b> Esta línea debe ser la primera línea del archivo, sin
-                            espacios o líneas
-                            que la precedan. De esta forma, el modo estándar del navegador es activado y las
-                            incorporaciones de HTML5 son
-                            interpretadas siempre que sea posible, o ignoradas en caso contrario.</p>
-
-                        <h4>&lt;html&gt;</h4>
-
-                        <p>Luego de declarar el tipo de documento, debemos comenzar a construir la estructura HTML.
-                            Como
-                            siempre, la estructura
-                            tipo árbol de este lenguaje tiene su raíz en el elemento &lt;html&gt;. Este elemento
-                            envolverá
-                            al resto del código:</p>
-                        <div class="codigo">
-                            <code>
-                                    &lt;!DOCTYPE html&gt;<br>
-                                    &lt;html lang=”es”&gt;<br>
-                                    &lt;head&gt;<br>
-                                    <br>
-                                    &lt;/head&gt;<br>
-                                    &lt;/html&gt;<br>
-                            </code>
-
-                        </div>
-
-                        <p>La etiqueta no cambió desde versiones anteriores y su propósito sigue siendo exactamente el
-                            mismo. Dentro de las
-                            etiquetas &lt;head&gt; definiremos el título de nuestra página web, declararemos el set de
-                            caracteres
-                            correspondiente,
-                            proveeremos información general acerca del documento e incorporaremos los archivos externos
-                            con
-                            estilos, códigos
-                            Javascript o incluso imágenes necesarias para generar la página en la pantalla.</p>
-
-                        <p>Excepto por el título y algunos
-                            íconos, el resto de la información incorporada en el documento entre estas etiquetas es
-                            invisible para el usuario.</p>
-
-                        <h4>&lt;body&gt;</h4>
-
-                        <p>La siguiente gran sección que es parte principal de la organización de un documento HTML es
-                            el
-                            cuerpo. El cuerpo
-                            representa la parte visible de todo documento y es especificado entre etiquetas
-                            &lt;body&gt; .
-                            Estas etiquetas
-                            tampoco
-                            han cambiado en relación con versiones previas de HTML:</p>
-
-                        <div class="codigo">
-                            <code>
-                            &lt;!DOCTYPE html&gt;<br>
-                            &lt;html lang=”es”&gt;<br>
-                            &lt;head&gt;<br>
-                            <br>
-                            &lt;/head&gt;<br>
-                            &lt;body&gt;<br>
-                            <br>
-                            &lt;/body&gt;<br>
-                            &lt;/html&gt;<br>
-                        </code>
-
-                        </div>
-
-                        <h4>&lt;meta&gt;</h4>
-
-                        <p>Es momento de construir la cabecera del documento. Algunos cambios e innovaciones fueron
-                            incorporados dentro de la
-                            cabecera, y uno de ellos es la etiqueta que define el juego de caracteres a utilizar para
-                            mostrar el documento.
-                            Ésta es una etiqueta &lt;meta&gt; que especifica cómo el texto será presentado en pantalla:</p>
-
-                        <div class="codigo">
-                            <code>
-                                    &lt;!DOCTYPE html&gt;<br>
-                                    &lt;html lang=”es”&gt;<br>
-                                    &lt;head&gt;<br>
-                                    &nbsp;&lt;meta charset=”iso-8859-1”&gt;<br>
-                                    <br>
-                                    &lt;/head&gt;<br>
-                                    &lt;body&gt;<br>
-                                    <br>
-                                    &lt;/body&gt;<br>
-                                    &lt;/html&gt;<br>
-                                </code>
-
-                        </div>
-
-                        <p>La innovación de este elemento en HTML5, como en la mayoría de los casos, es solo
-                            simplificación.
-                            La nueva etiqueta &lt;meta&gt; para la definición del tipo de caracteres es más corta y
-                            simple.
-                            Por supuesto,
-                            podemos cambiar el tipo iso-8859-1 por el necesario para nuestros documentos y agregar
-                            otras
-                            etiquetas &lt;meta&gt;
-                            como description o keywords para definir otros aspectos de la página web, como es mostrado
-                            en
-                            el siguiente ejemplo:</p>
-
-
-                        <div class="codigo">
-                            <code>
-                                    &lt;!DOCTYPE html&gt;<br>
-                                    &lt;html lang=”es”&gt;<br>
-                                    &lt;head&gt;<br>
-                                    &nbsp;&lt;meta charset=”iso-8859-1”&gt;<br>
-                                    &nbsp;&lt;meta name=”description” content=”Ejemplo de HTML5”&gt;<br>
-                                    &nbsp;&lt;meta name=”keywords” content=”HTML5, CSS3, Javascript”&gt;<br>
-                                    <br>
-                                    &lt;/head&gt;<br>
-                                    &lt;body&gt;<br>
-                                    <br>
-                                    &lt;/body&gt;<br>
-                                    &lt;/html&gt;<br>
-                                </code>
-
-                        </div>
-
-                        <h4>&lt;title&gt;</h4>
-
-                        <p>La etiqueta &lt;title&gt; , como siempre, simplemente especifica el título del documento, y
-                            no
-                            hay nada nuevo para
-                            comentar:</p>
-
-                        <div class="codigo">
-                            <code>
-                                    &lt;!DOCTYPE html&gt;<br>
-                                    &lt;html lang=”es”&gt;<br>
-                                    &lt;head&gt;<br>
-                                    &nbsp;&lt;meta charset=”iso-8859-1”&gt;<br>
-                                    &nbsp;&lt;meta name=”description” content=”Ejemplo de HTML5”&gt;<br>
-                                    &nbsp;&lt;meta name=”keywords” content=”HTML5, CSS3, Javascript”&gt;<br>
-                                    &nbsp;&lt;title&gt;Este texto es un titulo del documento&lt;/title&gt;
-                                    <br>
-                                    &lt;/head&gt;<br>
-                                    &lt;body&gt;<br>
-                                    <br>
-                                    &lt;/body&gt;<br>
-                                    &lt;/html&gt;<br>
-                                </code>
-
-                        </div>
-
-                        <p><b>Conceptos básicos:</b> El texto entre las etiquetas &lt;title&gt; es el título del
-                            documento
-                            que estamos creando. Normalmente
-                            este texto es mostrado en la barra superior de la</p>
-
-                        <h4>&lt;link&gt;</h4>
-
-                        <p>Otro importante elemento que va dentro de la cabecera del documento es &lt;link&gt; . Este
-                            elemento es usado para
-                            incorporar estilos, códigos Javascript, imágenes o iconos desde archivos externos. Uno de
-                            los
-                            usos más comunes
-                            para &lt;link&gt; es la incorporación de archivos con estilos CSS:</p>
-
-                        <div class="codigo">
-                            <code>
-                                        &lt;!DOCTYPE html&gt;<br>
-                                        &lt;html lang=”es”&gt;<br>
-                                        &lt;head&gt;<br>
-                                        &nbsp;&lt;meta charset=”iso-8859-1”&gt;<br>
-                                        &nbsp;&lt;meta name=”description” content=”Ejemplo de HTML5”&gt;<br>
-                                        &nbsp;&lt;meta name=”keywords” content=”HTML5, CSS3, Javascript”&gt;<br>
-                                        &nbsp;&lt;title&gt;Este texto es un titulo del documento&lt;/title&gt;
-                                        &lt;link rel=”stylesheet” href=”misestilos.css”&gt;
-                                        <br>
-                                        &lt;/head&gt;<br>
-                                        &lt;body&gt;<br>
-                                        <br>
-                                        &lt;/body&gt;<br>
-                                        &lt;/html&gt;<br>
+                    </article>
+        
+        
+                    <article class="mt-4">
+                        <div class="card sombra">
+                            <div class="card-body">
+                                <h3 id="estructuraGlobal">1.2 Estructura global</h3>
+                                <hr>
+                                <p>Los documentos HTML se encuentran estrictamente organizados. Cada parte del documento está
+                                    diferenciada,
+                                    declarada y determinada por etiquetas específicas.
+                                    En esta parte del capítulo vamos a ver cómo construir la estructura global de un documento
+                                    HTML
+                                    y los
+                                    nuevos
+                                    elementos semánticos incorporados en HTML5.</p>
+        
+                                <h4 id="eledoctype">&lt;!DOCTYPE&gt;</h4>
+        
+                                <p>En primer lugar necesitamos indicar el tipo de documento que estamos creando. Esto en HTML5
+                                    es
+                                    extremadamente
+                                    sencillo:</p>
+        
+                                <div class="codigo">
+                                    <code>&lt;!DOCTYPE html&gt;</code>
+        
+                                </div>
+        
+                                <p class="justificado"><b>IMPORTANTE:</b> Esta línea debe ser la primera línea del archivo, sin
+                                    espacios o líneas
+                                    que la precedan. De esta forma, el modo estándar del navegador es activado y las
+                                    incorporaciones de HTML5 son
+                                    interpretadas siempre que sea posible, o ignoradas en caso contrario.</p>
+        
+                                <h4 id="elehtml">&lt;html&gt;</h4>
+        
+                                <p>Luego de declarar el tipo de documento, debemos comenzar a construir la estructura HTML.
+                                    Como
+                                    siempre, la estructura
+                                    tipo árbol de este lenguaje tiene su raíz en el elemento &lt;html&gt;. Este elemento
+                                    envolverá
+                                    al resto del código:</p>
+                                <div class="codigo">
+                                    <code>
+                                            &lt;!DOCTYPE html&gt;<br>
+                                            &lt;html lang=”es”&gt;<br>
+                                            &lt;head&gt;<br>
+                                            <br>
+                                            &lt;/head&gt;<br>
+                                            &lt;/html&gt;<br>
                                     </code>
-
-                        </div>
-
-                        <p>En HTML5 ya no se necesita especificar qué tipo de estilos estamos insertando, por lo que el
-                            atributo type fue eliminado.
-                            Solo necesitamos dos atributos para incorporar nuestro archivo de estilos: rel y href . El
-                            atributo rel significa “relación”
-                            y es acerca de la relación entre el documento y el archivo que estamos incorporando por
-                            medio de href . En este caso, el
-                            atributo rel tiene el valor stylesheet que le dice al navegador que el archivo
-                            misestilos.css es un archivo CSS con estilos
-                            requeridos para presentar la página en pantalla (en el próximo capítulo estudiaremos cómo
-                            utilizar estilos CSS).</p>
-
-                    </div>
-                </div>
-            </article>
-
-            <article class="mt-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h3>1.3 Estructura del cuerpo</h3>
-
-                        <p>La estructura del cuerpo (el código entre las etiquetas &lt;body&gt; ) generará la parte
-                            visible del documento. Este es el
-                            código que producirá nuestra página web.</p>
-
-                        <p>HTML siempre ofreció diferentes formas de construir y organizar la información dentro del
-                            cuerpo de un documento.
-                            Uno de los primeros elementos provistos para este propósito fue &lt;table&lt; . Las tablas
-                            permitían a los diseñadores
-                            acomodar datos, texto, imágenes y herramientas dentro de filas y columnas de celdas,
-                            incluso sin que hayan sido
-                            concebidas para este propósito.</p>
-
-                        <p>En los primeros días de la web, las tablas fueron una revolución, un gran paso hacia
-                            adelante con respecto a la
-                            visualización de los documentos y la experiencia ofrecida a los usuarios. Más adelante,
-                            gradualmente, otros
-                            elementos reemplazaron su función, permitiendo lograr lo mismo con menos código,
-                            facilitando de este modo la
-                            creación, permitiendo portabilidad y ayudando al mantenimiento de los sitios web.</p>
-
-                        <p>El elemento &lt;div&gt; comenzó a dominar la escena. Con el surgimiento de webs más
-                            interactivas y la integración de HTML,
-                            CSS y Javascript, el uso de &lt;div&gt; se volvió una práctica común. Pero este elemento,
-                            así como &lt;table&lt; ,
-                            no provee demasiada información acerca de las parte del cuerpo que está representando.
-                            Desde imágenes a menús,
-                            textos, enlaces, códigos, formularios, cualquier cosa puede ir entre las etiquetas de
-                            apertura y cierre de un
-                            elemento &lt;div&gt; . En otras palabras, la palabra clave div solo especifica una división
-                            en el cuerpo, como la
-                            celda de una tabla, pero no ofrece indicio alguno sobre qué clase de división es, cuál es
-                            su propósito o
-                            qué contiene.</p>
-
-                        <p>Para los usuarios estas claves o indicios no son importantes, pero para los navegadores la
-                            correcta interpretación
-                            de qué hay dentro del documento que se está procesando puede ser crucial en muchos casos.
-                            Luego de la revolución de
-                            los dispositivos móviles y el surgimiento de diferentes formas en que la gente accede a la
-                            web, la identificación de
-                            cada parte del documento es una tarea que se ha vuelto más relevante que nunca.</p>
-
-                        <p>Considerando todo lo expuesto, HTML5 incorpora nuevos elementos que ayudan a identificar
-                            cada sección del documento
-                            y organizar el cuerpo del mismo. En HTML5 las secciones más importantes son diferenciadas y
-                            la estructura principal
-                            ya no depende más de los elementos &lt;div&gt; o &lt;table&lt; .</p>
-
-                        <p>Cómo usamos estos nuevos elementos depende de nosotros, pero las palabras clave otorgadas a
-                            cada uno de ellos nos
-                            dan ayudan a entender sus funciones. Normalmente una página o aplicación web está dividida
-                            entre varias áreas
-                            visuales para mejorar la experiencia del usuario y facilitar la interactividad. Las
-                            palabras claves que representan
-                            cada nuevo elemento de HTML5 están íntimamente relacionadas con estas áreas, como veremos
-                            pronto.</p>
-
-                        <h4>Organización</h4>
-
-                        <p>La Figura 1-1 representa un diseño común encontrado en la mayoría de los sitios webs estos
-                            días.
-                            A pesar
-                            del
-                            hecho de que cada diseñador crea sus propios diseños,
-                            en general podremos identificar las siguientes secciones en cada sitio web estudiado:</p>
-
-                        <div class="row justify-content-center">
-                            <div class="col-md-6">
-                                <figure>
-                                    <img src="img/diseño de una web.jpg" alt="Representación visual de un clásico diseño web.">
-
-                                    <figcaption>Figura 1-1. Representación visual de un clásico diseño web.</figcaption>
-                                </figure>
+        
+                                </div>
+        
+                                <p>La etiqueta no cambió desde versiones anteriores y su propósito sigue siendo exactamente el
+                                    mismo. Dentro de las
+                                    etiquetas &lt;head&gt; definiremos el título de nuestra página web, declararemos el set de
+                                    caracteres
+                                    correspondiente,
+                                    proveeremos información general acerca del documento e incorporaremos los archivos externos
+                                    con
+                                    estilos, códigos
+                                    Javascript o incluso imágenes necesarias para generar la página en la pantalla.</p>
+        
+                                <p>Excepto por el título y algunos
+                                    íconos, el resto de la información incorporada en el documento entre estas etiquetas es
+                                    invisible para el usuario.</p>
+        
+                                <h4 id="elebody">&lt;body&gt;</h4>
+        
+                                <p>La siguiente gran sección que es parte principal de la organización de un documento HTML es
+                                    el
+                                    cuerpo. El cuerpo
+                                    representa la parte visible de todo documento y es especificado entre etiquetas
+                                    &lt;body&gt; .
+                                    Estas etiquetas
+                                    tampoco
+                                    han cambiado en relación con versiones previas de HTML:</p>
+        
+                                <div class="codigo">
+                                    <code>
+                                    &lt;!DOCTYPE html&gt;<br>
+                                    &lt;html lang=”es”&gt;<br>
+                                    &lt;head&gt;<br>
+                                    <br>
+                                    &lt;/head&gt;<br>
+                                    &lt;body&gt;<br>
+                                    <br>
+                                    &lt;/body&gt;<br>
+                                    &lt;/html&gt;<br>
+                                </code>
+        
+                                </div>
+        
+                                <h4 id="elemeta">&lt;meta&gt;</h4>
+        
+                                <p>Es momento de construir la cabecera del documento. Algunos cambios e innovaciones fueron
+                                    incorporados dentro de la
+                                    cabecera, y uno de ellos es la etiqueta que define el juego de caracteres a utilizar para
+                                    mostrar el documento.
+                                    Ésta es una etiqueta &lt;meta&gt; que especifica cómo el texto será presentado en pantalla:</p>
+        
+                                <div class="codigo">
+                                    <code>
+                                            &lt;!DOCTYPE html&gt;<br>
+                                            &lt;html lang=”es”&gt;<br>
+                                            &lt;head&gt;<br>
+                                            &nbsp;&lt;meta charset=”iso-8859-1”&gt;<br>
+                                            <br>
+                                            &lt;/head&gt;<br>
+                                            &lt;body&gt;<br>
+                                            <br>
+                                            &lt;/body&gt;<br>
+                                            &lt;/html&gt;<br>
+                                        </code>
+        
+                                </div>
+        
+                                <p>La innovación de este elemento en HTML5, como en la mayoría de los casos, es solo
+                                    simplificación.
+                                    La nueva etiqueta &lt;meta&gt; para la definición del tipo de caracteres es más corta y
+                                    simple.
+                                    Por supuesto,
+                                    podemos cambiar el tipo iso-8859-1 por el necesario para nuestros documentos y agregar
+                                    otras
+                                    etiquetas &lt;meta&gt;
+                                    como description o keywords para definir otros aspectos de la página web, como es mostrado
+                                    en
+                                    el siguiente ejemplo:</p>
+        
+        
+                                <div class="codigo">
+                                    <code>
+                                            &lt;!DOCTYPE html&gt;<br>
+                                            &lt;html lang=”es”&gt;<br>
+                                            &lt;head&gt;<br>
+                                            &nbsp;&lt;meta charset=”iso-8859-1”&gt;<br>
+                                            &nbsp;&lt;meta name=”description” content=”Ejemplo de HTML5”&gt;<br>
+                                            &nbsp;&lt;meta name=”keywords” content=”HTML5, CSS3, Javascript”&gt;<br>
+                                            <br>
+                                            &lt;/head&gt;<br>
+                                            &lt;body&gt;<br>
+                                            <br>
+                                            &lt;/body&gt;<br>
+                                            &lt;/html&gt;<br>
+                                        </code>
+        
+                                </div>
+        
+                                <h4 id="eletitle">&lt;title&gt;</h4>
+        
+                                <p>La etiqueta &lt;title&gt; , como siempre, simplemente especifica el título del documento, y
+                                    no
+                                    hay nada nuevo para
+                                    comentar:</p>
+        
+                                <div class="codigo">
+                                    <code>
+                                            &lt;!DOCTYPE html&gt;<br>
+                                            &lt;html lang=”es”&gt;<br>
+                                            &lt;head&gt;<br>
+                                            &nbsp;&lt;meta charset=”iso-8859-1”&gt;<br>
+                                            &nbsp;&lt;meta name=”description” content=”Ejemplo de HTML5”&gt;<br>
+                                            &nbsp;&lt;meta name=”keywords” content=”HTML5, CSS3, Javascript”&gt;<br>
+                                            &nbsp;&lt;title&gt;Este texto es un titulo del documento&lt;/title&gt;
+                                            <br>
+                                            &lt;/head&gt;<br>
+                                            &lt;body&gt;<br>
+                                            <br>
+                                            &lt;/body&gt;<br>
+                                            &lt;/html&gt;<br>
+                                        </code>
+        
+                                </div>
+        
+                                <p><b>Conceptos básicos:</b> El texto entre las etiquetas &lt;title&gt; es el título del
+                                    documento
+                                    que estamos creando. Normalmente
+                                    este texto es mostrado en la barra superior de la</p>
+        
+                                <h4 id="elelink">&lt;link&gt;</h4>
+        
+                                <p>Otro importante elemento que va dentro de la cabecera del documento es &lt;link&gt; . Este
+                                    elemento es usado para
+                                    incorporar estilos, códigos Javascript, imágenes o iconos desde archivos externos. Uno de
+                                    los
+                                    usos más comunes
+                                    para &lt;link&gt; es la incorporación de archivos con estilos CSS:</p>
+        
+                                <div class="codigo">
+                                    <code>
+                                                &lt;!DOCTYPE html&gt;<br>
+                                                &lt;html lang=”es”&gt;<br>
+                                                &lt;head&gt;<br>
+                                                &nbsp;&lt;meta charset=”iso-8859-1”&gt;<br>
+                                                &nbsp;&lt;meta name=”description” content=”Ejemplo de HTML5”&gt;<br>
+                                                &nbsp;&lt;meta name=”keywords” content=”HTML5, CSS3, Javascript”&gt;<br>
+                                                &nbsp;&lt;title&gt;Este texto es un titulo del documento&lt;/title&gt;
+                                                &lt;link rel=”stylesheet” href=”misestilos.css”&gt;
+                                                <br>
+                                                &lt;/head&gt;<br>
+                                                &lt;body&gt;<br>
+                                                <br>
+                                                &lt;/body&gt;<br>
+                                                &lt;/html&gt;<br>
+                                            </code>
+        
+                                </div>
+        
+                                <p>En HTML5 ya no se necesita especificar qué tipo de estilos estamos insertando, por lo que el
+                                    atributo type fue eliminado.
+                                    Solo necesitamos dos atributos para incorporar nuestro archivo de estilos: rel y href . El
+                                    atributo rel significa “relación”
+                                    y es acerca de la relación entre el documento y el archivo que estamos incorporando por
+                                    medio de href . En este caso, el
+                                    atributo rel tiene el valor stylesheet que le dice al navegador que el archivo
+                                    misestilos.css es un archivo CSS con estilos
+                                    requeridos para presentar la página en pantalla (en el próximo capítulo estudiaremos cómo
+                                    utilizar estilos CSS).</p>
+        
                             </div>
                         </div>
-
-                        <p>HTML5 considera esta estructura básica y provee nuevos elementos para diferenciar y declarar
-                            cada una de sus partes.
-                            A partir de ahora podemos decir al navegador para qué es cada sección:</p>
-
-                        <div class="row justify-content-center">
-                            <div class="col-md-6">
-                                <figure>
-                                    <img src="img/estructura HTML5.png" alt="Representación visual de un clásico diseño web.">
-
-                                    <figcaption>Figura 1-2. Representación visual de un diseño utilizando elementos
-                                        HTML5.</figcaption>
-                                </figure>
-                            </div>
-                        </div>
-
-                        <p>La Figura 1-2 muestra el típico diseño presentado anteriormente, pero esta vez con los
-                            correspondientes elementos HTML5 para
-                            cada sección (incluyendo etiquetas de apertura y cierre).</p>
-
-                        <table class="table table-striped">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th>Elementos Html5</th>
-                                    <th>Descripción</th>
-                                </tr>
-
-                            </thead>
-
-                            <tbody>
-                                <tr>
-                                    <td>&lt;header&gt;</td>
-                                    <td>El elemento &lt;header&gt; no debe ser confundido con &lt;head&gt; usado antes
-                                        para construir la cabecera del
-                                        documento. la intención de &lt;header&gt; es proveer información introductoria
-                                        (títulos, subtítulos, logos),
-                                        pero difiere con respecto a &lt;head&gt; en su alcance. Mientras que el
-                                        elemento &lt;head&gt; tiene el propósito
-                                        de proveer información acerca de todo el documento, &lt;header&gt; es usado
-                                        solo para el cuerpo o secciones
-                                        específicas dentro del cuerpo:</td>
-                                </tr>
-
-                                <tr>
-                                    <td>&lt;nav&gt;</td>
-                                    <td>El elemento &lt;nav&gt; fue creado para ofrecer ayuda para la navegación, como
-                                        en menús principales o grandes bloques
-                                        de enlaces, y debería ser utilizado de esa manera.</td>
-                                </tr>
-
-                                <tr>
-                                    <td>&lt;section&gt;</td>
-                                    <td>La columna Información Principal contiene la información más relevante del
-                                        documento
-                                        y puede ser encontrada en diferentes formas (por ejemplo, dividida en varios
-                                        bloques o columnas). Debido a que el
-                                        propósito de estas columnas es más general, el elemento en HTML5 que especifica
-                                        estas secciones se llama simplemente &lt;section&gt; :</td>
-                                </tr>
-
-                                <tr>
-                                    <td>&lt;aside&gt;</td>
-                                    <td>la columna llamada Barra Lateral se ubica al lado de la columna Información
-                                        Principal . Esta es una columna o
-                                        sección que normalmente contiene datos relacionados con la información
-                                        principal pero que no son relevantes o
-                                        igual de importantes.</td>
-                                </tr>
-
-                                <tr>
-                                    <td>&lt;footer&gt;</td>
-                                    <td>
-                                        Para finalizar la construcción de la plantilla o estructura elemental de
-                                        nuestro documento HTML5, solo necesitamos
-                                        un elemento más. Ya contamos con la cabecera del cuerpo, secciones con ayuda
-                                        para la navegación, información
-                                        importante y hasta una barra lateral con datos adicionales, por lo tanto lo
-                                        único que nos queda por hacer es
-                                        cerrar nuestro diseño para otorgarle un final al cuerpo del documento. HTML5
-                                        provee un elemento específico para
-                                        este propósito llamado &lt;footer&gt;
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="mt-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h1>Comentarios</h1>
-                        <hr>
-
-
-                        <div class="row justify-content-center">
-                            <div class="col-md-6">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h5>Deja tu comentario</h5>
-                                    </div>
-
-                                    <div class="card-body">
-                                        <form action="">
-                                            <div class="form-group">
-                                                <label for="">Nombre</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="">Apellido</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="">Mail</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="">Mensaje</label>
-                                                <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
-                                            </div>
-                                        </form>
+                    </article>
+        
+                    <article class="mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 id="estructuraCuerpo">1.3 Estructura del cuerpo</h3>
+        
+                                <p>La estructura del cuerpo (el código entre las etiquetas &lt;body&gt; ) generará la parte
+                                    visible del documento. Este es el
+                                    código que producirá nuestra página web.</p>
+        
+                                <p>HTML siempre ofreció diferentes formas de construir y organizar la información dentro del
+                                    cuerpo de un documento.
+                                    Uno de los primeros elementos provistos para este propósito fue &lt;table&lt; . Las tablas
+                                    permitían a los diseñadores
+                                    acomodar datos, texto, imágenes y herramientas dentro de filas y columnas de celdas,
+                                    incluso sin que hayan sido
+                                    concebidas para este propósito.</p>
+        
+                                <p>En los primeros días de la web, las tablas fueron una revolución, un gran paso hacia
+                                    adelante con respecto a la
+                                    visualización de los documentos y la experiencia ofrecida a los usuarios. Más adelante,
+                                    gradualmente, otros
+                                    elementos reemplazaron su función, permitiendo lograr lo mismo con menos código,
+                                    facilitando de este modo la
+                                    creación, permitiendo portabilidad y ayudando al mantenimiento de los sitios web.</p>
+        
+                                <p>El elemento &lt;div&gt; comenzó a dominar la escena. Con el surgimiento de webs más
+                                    interactivas y la integración de HTML,
+                                    CSS y Javascript, el uso de &lt;div&gt; se volvió una práctica común. Pero este elemento,
+                                    así como &lt;table&lt; ,
+                                    no provee demasiada información acerca de las parte del cuerpo que está representando.
+                                    Desde imágenes a menús,
+                                    textos, enlaces, códigos, formularios, cualquier cosa puede ir entre las etiquetas de
+                                    apertura y cierre de un
+                                    elemento &lt;div&gt; . En otras palabras, la palabra clave div solo especifica una división
+                                    en el cuerpo, como la
+                                    celda de una tabla, pero no ofrece indicio alguno sobre qué clase de división es, cuál es
+                                    su propósito o
+                                    qué contiene.</p>
+        
+                                <p>Para los usuarios estas claves o indicios no son importantes, pero para los navegadores la
+                                    correcta interpretación
+                                    de qué hay dentro del documento que se está procesando puede ser crucial en muchos casos.
+                                    Luego de la revolución de
+                                    los dispositivos móviles y el surgimiento de diferentes formas en que la gente accede a la
+                                    web, la identificación de
+                                    cada parte del documento es una tarea que se ha vuelto más relevante que nunca.</p>
+        
+                                <p>Considerando todo lo expuesto, HTML5 incorpora nuevos elementos que ayudan a identificar
+                                    cada sección del documento
+                                    y organizar el cuerpo del mismo. En HTML5 las secciones más importantes son diferenciadas y
+                                    la estructura principal
+                                    ya no depende más de los elementos &lt;div&gt; o &lt;table&lt; .</p>
+        
+                                <p>Cómo usamos estos nuevos elementos depende de nosotros, pero las palabras clave otorgadas a
+                                    cada uno de ellos nos
+                                    dan ayudan a entender sus funciones. Normalmente una página o aplicación web está dividida
+                                    entre varias áreas
+                                    visuales para mejorar la experiencia del usuario y facilitar la interactividad. Las
+                                    palabras claves que representan
+                                    cada nuevo elemento de HTML5 están íntimamente relacionadas con estas áreas, como veremos
+                                    pronto.</p>
+        
+                                <h4 id="organizacion">Organización</h4>
+        
+                                <p>La Figura 1-1 representa un diseño común encontrado en la mayoría de los sitios webs estos
+                                    días.
+                                    A pesar
+                                    del
+                                    hecho de que cada diseñador crea sus propios diseños,
+                                    en general podremos identificar las siguientes secciones en cada sitio web estudiado:</p>
+        
+                                <div class="row justify-content-center">
+                                    <div class="col-md-6">
+                                        <figure>
+                                            <img src="img/diseño de una web.jpg" alt="Representación visual de un clásico diseño web.">
+        
+                                            <figcaption>Figura 1-1. Representación visual de un clásico diseño web.</figcaption>
+                                        </figure>
                                     </div>
                                 </div>
+        
+                                <p>HTML5 considera esta estructura básica y provee nuevos elementos para diferenciar y declarar
+                                    cada una de sus partes.
+                                    A partir de ahora podemos decir al navegador para qué es cada sección:</p>
+        
+                                <div class="row justify-content-center">
+                                    <div class="col-md-6">
+                                        <figure>
+                                            <img src="img/estructura HTML5.png" alt="Representación visual de un clásico diseño web.">
+        
+                                            <figcaption>Figura 1-2. Representación visual de un diseño utilizando elementos
+                                                HTML5.</figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+        
+                                <p>La Figura 1-2 muestra el típico diseño presentado anteriormente, pero esta vez con los
+                                    correspondientes elementos HTML5 para
+                                    cada sección (incluyendo etiquetas de apertura y cierre).</p>
 
+                                <h3 id="etiquetasCuerpo">Etiquetas HTML5</h3>
+        
+                                <table class="table table-striped">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>Elementos Html5</th>
+                                            <th>Descripción</th>
+                                        </tr>
+        
+                                    </thead>
+        
+                                    <tbody>
+                                        <tr>
+                                            <td>&lt;header&gt;</td>
+                                            <td>El elemento &lt;header&gt; no debe ser confundido con &lt;head&gt; usado antes
+                                                para construir la cabecera del
+                                                documento. la intención de &lt;header&gt; es proveer información introductoria
+                                                (títulos, subtítulos, logos),
+                                                pero difiere con respecto a &lt;head&gt; en su alcance. Mientras que el
+                                                elemento &lt;head&gt; tiene el propósito
+                                                de proveer información acerca de todo el documento, &lt;header&gt; es usado
+                                                solo para el cuerpo o secciones
+                                                específicas dentro del cuerpo:</td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>&lt;nav&gt;</td>
+                                            <td>El elemento &lt;nav&gt; fue creado para ofrecer ayuda para la navegación, como
+                                                en menús principales o grandes bloques
+                                                de enlaces, y debería ser utilizado de esa manera.</td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>&lt;section&gt;</td>
+                                            <td>La columna Información Principal contiene la información más relevante del
+                                                documento
+                                                y puede ser encontrada en diferentes formas (por ejemplo, dividida en varios
+                                                bloques o columnas). Debido a que el
+                                                propósito de estas columnas es más general, el elemento en HTML5 que especifica
+                                                estas secciones se llama simplemente &lt;section&gt; :</td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>&lt;aside&gt;</td>
+                                            <td>la columna llamada Barra Lateral se ubica al lado de la columna Información
+                                                Principal . Esta es una columna o
+                                                sección que normalmente contiene datos relacionados con la información
+                                                principal pero que no son relevantes o
+                                                igual de importantes.</td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>&lt;footer&gt;</td>
+                                            <td>
+                                                Para finalizar la construcción de la plantilla o estructura elemental de
+                                                nuestro documento HTML5, solo necesitamos
+                                                un elemento más. Ya contamos con la cabecera del cuerpo, secciones con ayuda
+                                                para la navegación, información
+                                                importante y hasta una barra lateral con datos adicionales, por lo tanto lo
+                                                único que nos queda por hacer es
+                                                cerrar nuestro diseño para otorgarle un final al cuerpo del documento. HTML5
+                                                provee un elemento específico para
+                                                este propósito llamado &lt;footer&gt;
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+        
                             </div>
                         </div>
+                    </article>
+        
+                    <article class="mt-4">
+                       <div class="card">
+                           <div class="card-body">
+                                <h3>1.4 Dentro del cuerpo</h3>
+        
+                        <p>El cuerpo de nuestro documento está listo. La estructura básica de nuestro sitio web fue finalizada, pero aún tenemos que 
+                            trabajar en el contenido. Los elementos HTML5 estudiados hasta el momento nos ayudan a identificar cada sección del diseño 
+                            y asignar un propósito intrínseco a cada una de ellas, pero lo que es realmente importante para nuestro sitio web se 
+                            encuentra en el interior de estas secciones.</p>
+        
+                        <p>La mayoría de los elementos ya estudiados fueron creados para construir una estructura para el documento HTML que pueda ser 
+                            identificada y reconocida por los navegadores y nuevos dispositivos. Aprendimos acerca de la etiqueta &lt;body&gt; usada para 
+                            declarar el cuerpo o parte visible del documento, la etiqueta &lt;header&gt; con la que agrupamos información importante 
+                            para el cuerpo, la etiqueta &lt;nav&gt; que provee ayuda para la navegación del sitio web, la etiqueta &lt;section&gt; necesaria
+                            para contener la información más relevante, y también &lt;aside&gt; y &lt;footer&gt; para ofrecer información adicional 
+                            de cada sección y del documento mismo. Pero ninguno de estos elementos declara algo acerca del contenido. 
+                            Todos tienen un específico propósito estructural.</p>
+        
+                        <p>Más profundo nos introducimos dentro del documento más cerca nos encontramos de la definición del contenido. 
+                            Esta información estará compuesta por diferentes elementos visuales como títulos, textos, imágenes, videos y aplicaciones 
+                            interactivas, entre otros. Necesitamos poder diferenciar estos elementos y establecer una relación entre ellos dentro de la 
+                            estructura .</p>
 
+                        <h3>Etiquetas HTML5</h3>
+        
+                            <table class="table table-striped">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>Elementos Html5</th>
+                                            <th>Descripción</th>
+                                        </tr>
+                                    </thead>
+                
+                                    <tbody>
+                                        <tr>
+                                            <td>&lt;article&gt;</td>
+                                            <td>
+                                                    Este elemento fue creado con la intención de contener unidades independientes de contenido, por lo que puede
+                                                     incluir mensajes de foros, artículos de una revista digital, entradas de blog, comentarios de usuarios, 
+                                                     etc… Lo que hace es agrupar porciones de información que están relacionadas entre sí independientemente de 
+                                                     su naturaleza.
+                                            </td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>&lt;hgroup&gt;</td>
+        
+                                            <td>
+                                                    Para construir este tipo de cabeceras, podemos aprovechar el resto de las etiquetas H, como &lt;h1&gt;, 
+                                                    &lt;h2&gt; , &lt;h3&gt; , &lt;h4&gt; , &lt;h5&gt; y &lt;h6&gt; , pero siempre considerando que por propósitos de procesamiento 
+                                                    interno, y para evitar generar múltiples secciones durante la interpretación del documento por
+                                                    parte del navegador, estas etiquetas deben ser agrupadas juntas. Por esta razón, HTML5 provee el
+                                                    elemento &lt;hgroup&gt; 
+                                            </td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>&lt;figure&gt; y &lt;figcaption&gt;</td>
+        
+                                            <td>
+                                                La etiqueta &lt;figure&gt; fue creada para ayudarnos a ser aún más específicos a la hora de declarar el contenido del documento.
+                                                Las etiquetas &lt;figcaption&gt; encierran el texto relacionado con &lt;figure&gt; y establecen una relación entre ambos elementos y su contenido.
+                                            </td>
+                                        </tr>
+        
+                                    </tbody>
+                                </table>
+                           </div>
+        
+                        
+                       </div>
+                    </article>
+        
+        
+                    <article class="mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h1>Comentarios</h1>
+                                <hr>
+        
+        
+                                <div class="row justify-content-center">
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5>Deja tu comentario</h5>
+                                            </div>
+        
+                                            <div class="card-body">
+                                                <form action="">
+                                                    <div class="form-group">
+                                                        <label for="">Nombre</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+        
+                                                    <div class="form-group">
+                                                        <label for="">Apellido</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+        
+                                                    <div class="form-group">
+                                                        <label for="">Mail</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+        
+                                                    <div class="form-group">
+                                                        <label for="">Mensaje</label>
+                                                        <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </article>
+        
+                </section>
+
+            </div>
+
+            <div class="col-md-3">
+                <aside class="sticky-top">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <h1>Indice</h1>
+                            <hr>
+                            <h4><a href="#basicos">1.1 Componentes básicos</a></h4>
+                            <h4><a href="#estructuraGlobal">1.2 Estructura global</a></h4>
+                            <h5><a href="#eledoctype">&nbsp;&nbsp;&nbsp;&nbsp;&lt;!DOCTYPE&gt;</a></h5>
+                            <h5><a href="#elehtml">&nbsp;&nbsp;&nbsp;&nbsp;&lt;html&gt;</a></h5>
+                            <h5><a href="#elebody">&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;</a></h5>
+                            <h5><a href="#elemeta">&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta&gt;</a></h5>
+                            <h5><a href="#eletitle">&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;</a></h5>
+                            <h5><a href="#elelink">&nbsp;&nbsp;&nbsp;&nbsp;&lt;link&gt;</a></h5>
+                            <h4><a href="#estructuraCuerpo">1.3 Estructura del cuerpo</a></h4>
+                            <h5><a href="#organizacion">&nbsp;&nbsp;&nbsp;&nbsp;Organización</a></h5>
+                            <h5><a href="#etiquetasCuerpo">&nbsp;&nbsp;&nbsp;&nbsp;Etiquetas Cuerpo</a></h5>
+                        </div>
                     </div>
-                </div>
-            </article>
-
-        </section>
+                </aside>
+            </div>
+        </div>
     </div>
 
 </body>
