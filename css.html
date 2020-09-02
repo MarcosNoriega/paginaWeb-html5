@@ -5,45 +5,403 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Html</a></li>
-                <li><a href="css.html">Css</a></li>
-                <li><a href="javascritpt.html">Javascript</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">HTML5</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Html <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="css.html">Css</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript.html">Javascript</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <section>
+    <div class="container mt-4">
         <h1>Estilos CSS y modelos de caja</h1>
         <hr>
 
-        <h3>2.1 CSS y HTML</h3>
-        <p>Oficialmente CSS nada tiene que ver con HTML5. CSS no es parte de la especificación y nunca lo fue. Este lenguaje es, de hecho, 
-            un complemento desarrollado para superar las más satisfacer las demandas de diseñadores. En consecuencia, CSS pronto fue adoptado 
-            como la forma de separar la estructura de la presentación. Desde entonces, CSS ha crecido y ganado importancia, pero 
-            siempre desarrollado en paralelo, enfocado en las necesidades de los diseñadores y apartado del proceso de evolución de HTML .</p>
+        <div class="row">
+            <div class="col-md-9">
+                <section>
 
-        <p>La versión 3 de CSS sigue el mismo camino, pero esta vez con un mayor compromiso. La especificación de HTML5 fue desarrollada considerando 
-            CSS a cargo del diseño. Debido a esta consideración, la integración entre HTML y CSS es ahora vital para el desarrollo web y esta es la 
-            razón por la que cada vez que mencionamos HTML5 también estamos haciendo referencia a CSS3, aunque oficialmente se trate de dos tecnologías 
-            completamente separadas.</p>
+                    <article>
+                        <div class="card sombra">
+                            <div class="card-body">
+                                <h3>2.1 CSS y HTML</h3>
+                                <p>Oficialmente CSS nada tiene que ver con HTML5. CSS no es parte de la especificación
+                                    y nunca lo fue. Este lenguaje es, de hecho,
+                                    un complemento desarrollado para superar las más satisfacer las demandas de
+                                    diseñadores. En consecuencia, CSS pronto fue adoptado
+                                    como la forma de separar la estructura de la presentación. Desde entonces, CSS ha
+                                    crecido y ganado importancia, pero
+                                    siempre desarrollado en paralelo, enfocado en las necesidades de los diseñadores y
+                                    apartado del proceso de evolución de HTML .</p>
 
-        <p>En este momento las nuevas características incorporadas en CSS3 están siendo implementadas e incluidas junto al resto de la 
-            especificación en navegadores compatibles con HTML5. En este capítulo, vamos a estudiar conceptos básicos de CSS y las nuevas 
-            técnicas de CSS3 ya disponibles para presentación y estructuración . También aprenderemos cómo utilizar los nuevos selectores y 
-            pseudo clases que hacen más fácil la selección e identificación de elementos HTML.</p>
+                                <p>La versión 3 de CSS sigue el mismo camino, pero esta vez con un mayor compromiso. La
+                                    especificación de HTML5 fue desarrollada considerando
+                                    CSS a cargo del diseño. Debido a esta consideración, la integración entre HTML y
+                                    CSS es ahora vital para el desarrollo web y esta es la
+                                    razón por la que cada vez que mencionamos HTML5 también estamos haciendo referencia
+                                    a CSS3, aunque oficialmente se trate de dos tecnologías
+                                    completamente separadas.</p>
 
-        <p class="justificado"><b>Conceptos básicos:</b> CSS es un lenguaje que trabaja junto con HTML para proveer estilos visuales a los elementos del documento, como 
-            tamaño, color, fondo, bordes, etc… IMPORTANTE: En este momento las nuevas incorporaciones de CSS3 están siendo implementadas en las 
-            últimas versiones de los navegadores más populares, pero algunas de ellas se encuentran aún en estado experimental. Por esta razón, 
-            estos nuevos estilos deberán ser precedidos por prefijos tales como –moz- o -webkit- para ser efectivamente interpretados. Analizaremos 
-            este importante asunto más adelante.</p>
-    </section>
+                                <p>En este momento las nuevas características incorporadas en CSS3 están siendo
+                                    implementadas e incluidas junto al resto de la
+                                    especificación en navegadores compatibles con HTML5. En este capítulo, vamos a
+                                    estudiar conceptos básicos de CSS y las nuevas
+                                    técnicas de CSS3 ya disponibles para presentación y estructuración . También
+                                    aprenderemos cómo utilizar los nuevos selectores y
+                                    pseudo clases que hacen más fácil la selección e identificación de elementos HTML.</p>
+
+                                <p class="justificado"><b>Conceptos básicos:</b> CSS es un lenguaje que trabaja junto
+                                    con HTML para proveer estilos visuales a los elementos del documento, como
+                                    tamaño, color, fondo, bordes, etc… </p>
+
+                                <p class="justificado"><b>IMPORTANTE:</b> En este momento las nuevas incorporaciones de
+                                    CSS3 están siendo implementadas en las
+                                    últimas versiones de los navegadores más populares, pero algunas de ellas se
+                                    encuentran aún en estado experimental. Por esta razón,
+                                    estos nuevos estilos deberán ser precedidos por prefijos tales como –moz- o
+                                    -webkit- para ser efectivamente interpretados. Analizaremos
+                                    este importante asunto más adelante.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="card sombra mt-4">
+
+                            <div class="card-body">
+                                <h3>2.2 Estilos y estructura </h3>
+                                <p>A pesar de que cada navegador garantiza estilos por defecto para cada uno de
+                                    los elementos HTML, estos estilos no necesariamente satisfacen los requerimientos
+                                    de cada diseñador.
+                                    Normalmente se encuentran muy distanciados de lo que queremos para nuestros sitios
+                                    webs. Diseñadores
+                                    y desarrolladores a menudo deben aplicar sus propios estilos para obtener la
+                                    organización y el efecto
+                                    visual que realmente desean.</p>
+
+                                <h4>Elementos block</h4>
+
+                                <p>Con respecto a la estructura, básicamente cada navegador ordena los elementos por
+                                    defecto de acuerdo
+                                    a su tipo: block (bloque) o inline (en línea). Esta clasificación está asociada con
+                                    la forma en que
+                                    los elementos son mostrados en pantalla.</p>
+
+                                <ul>
+                                    <li><b>Elementos block</b> son posicionados uno sobre otro hacia abajo en la
+                                        página.</li>
+                                    <li><b>Elementos block</b> Elementos inline son posicionados lado a lado, uno al
+                                        lado del otro en la misma línea, sin
+                                        ningún salto de línea a menos que ya no haya más espacio horizontal para
+                                        ubicarlos.</li>
+                                </ul>
+
+                                <p>Casi todos los elementos estructurales en nuestros documentos serán tratados por los
+                                    navegadores
+                                    como elementos block por defecto. Esto significa que cada elemento HTML que
+                                    representa una parte de
+                                    la organización visual (por ejemplo, &lt;section&gt; , &lt;nav&gt; , &lt;header&gt;
+                                    , &lt;footer&gt; , &lt;div&gt; ) será
+                                    posicionado debajo del anterior.</p>
+
+                                <div class="row justify-content-center">
+                                    <div class="col-md-6">
+                                        <figure>
+                                            <img src="img/estructura.jpg" alt="Representación visual de un clásico diseño web.">
+
+                                            <figcaption>Figura 2-1. Representación visual de una página web mostrada
+                                                con estilos por defecto.</figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <h4>Modelos de caja</h4>
+
+                                <p>Para aprender cómo podemos crear nuestra propia organización de los elementos en
+                                    pantalla, debemos primero
+                                    entender cómo los navegadores procesan el código HTML. Los navegadores consideran
+                                    cada elemento HTML
+                                    como una caja. Una página web es en realidad un grupo de cajas ordenadas siguiendo
+                                    ciertas reglas.
+                                    Estas reglas son establecidas por estilos provistos por los navegadores o por los
+                                    diseñadores usando
+                                    CSS.</p>
+
+                                <p>CSS tiene un set predeterminado de propiedades destinados a sobrescribir los estilos
+                                    provistos por navegadores y obtener la
+                                    organización deseada. Estas propiedades no son específicas, tienen que ser
+                                    combinadas para formar reglas que luego serán usadas para
+                                    agrupar cajas y obtener la correcta disposición en pantalla. La combinación de
+                                    estas reglas es normalmente llamada modelo o sistema de
+                                    disposición. Todas estas reglas aplicadas juntas constituyen lo que se llama un
+                                    modelo de caja.</p>
+
+                                <p>Existe solo un modelo de caja que es considerado estándar estos días, y muchos otros
+                                    que aún se encuentran en estado experimental.
+                                    El modelo válido y ampliamente adoptado es el llamado Modelo de Caja Tradicional,
+                                    el cual ha sido usado desde la primera versión de
+                                    CSS.</p>
+
+                                <p>Aunque este modelo ha probado ser efectivo, algunos modelos experimentales intentan
+                                    superar sus deficiencias, pero la falta de consenso
+                                    sobre el reemplazo más adecuado aún mantiene a este viejo modelo en vigencia y la
+                                    mayoría de los sitios webs programados en HTML5 lo
+                                    continúan utilizando.</p>
+
+
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="mt-4">
+                        <div class="card sombra">
+                            <div class="card-body">
+                                <h3>2.3 Conceptos básicos sobre estilos</h3>
+
+                                <p>Antes de comenzar a insertar reglas CSS en nuestro archivo de estilos y aplicar un
+                                    modelo de caja, debemos revisar los conceptos básicos
+                                    sobre estilos CSS que van a ser utilizados.</p>
+
+                                <p>Aplicar estilos a los elementos HTML cambia la forma en que estos son presentados en
+                                    pantalla. Como explicamos anteriormente, los navegadores
+                                    proveen estilos por defecto que en la mayoría de los casos no son suficientes para
+                                    satisfacer las necesidades de los diseñadores.
+                                    Para cambiar esto, podemos sobrescribir estos estilos con los nuestros usando
+                                    diferentes técnicas.</p>
+
+                                <h3>Estilos en línea</h3>
+
+                                <p>Una de las técnicas más simples para incorporar estilos CSS a un documento HTML es
+                                    la de asignar los estilos dentro de las etiquetas por medio del atributo <b>style</b>.</p>
+
+                                <p>Acontinuacion se muestra un documento HTML simple que contiene el elemento &lt;p&gt;
+                                    modificado por el atributo style con el valor font-size: 20px .
+                                    Este estilo cambia el tamaño por defecto del texto dentro del elemento &lt;p&gt; a
+                                    un nuevo tamaño de 20 pixeles.</p>
+
+                                <div class="codigo">
+                                    <code>
+                                                                &lt;!DOCTYPE html&gt;<br>
+                                                                &lt;html lang=”es”&gt;<br>
+                                                                &lt;head&gt;<br>
+                                                                &nbsp;&lt;title&gt;Este texto es un titulo del documento&lt;/title&gt;
+                                                                <br>
+                                                                &lt;/head&gt;<br>
+                                                                &lt;body&gt;<br>
+                                                                &nbsp;&lt;p style=”font-size: 20px”&gt;<br>
+                                                                <br>
+                                                                &lt;/body&gt;<br>
+                                                                &lt;/html&gt;<br>
+                                                            </code>
+
+                                </div>
+
+                                <p>Usar la técnica demostrada anteriormente es una buena manera de probar estilos y
+                                    obtener una vista rápida de sus efectos, pero no es
+                                    recomendado para aplicar estilos a todo el documento. La razón es simple: cuando
+                                    usamos esta técnica, debemos escribir y repetir cada
+                                    estilo en cada uno de los elementos que queremos modificar, incrementando el tamaño
+                                    del documento a proporciones inaceptables y
+                                    haciéndolo imposible de mantener y actualizar. Solo imagine lo que ocurriría si
+                                    decide que en lugar de 20 pixeles el tamaño de cada uno
+                                    de los elementos &lt;p&gt; debería ser de 24 pixeles. Tendría que modificar cada
+                                    estilo en cada etiqueta &lt;p&gt; en el documento completo.</p>
+
+                                <h3>Estilos embebidos</h3>
+
+                                <p>Una mejor alternativa es insertar los estilos en la cabecera del documento y luego
+                                    usar referencias para afectar los elementos HTML correspondientes:</p>
+
+                                <div class="codigo">
+                                    <code>
+                                                            &lt;!DOCTYPE html&gt;<br>
+                                                            &lt;html lang=”es”&gt;<br>
+                                                            &lt;head&gt;<br>
+                                                            &nbsp;&lt;title&gt;Este texto es un titulo del documento&lt;/title&gt;<br>
+                                                            &lt;style&gt;<br>
+                                                            &nbsp;p { font-size: 20px }<br>
+                                                            &lt;/style&gt;<br>
+                                                            <br>
+                                                            &lt;/head&gt;<br>
+                                                            &lt;body&gt;<br>
+                                                            <br>
+                                                            &lt;/body&gt;<br>
+                                                            &lt;/html&gt;<br>
+                                                        </code>
+
+                                </div>
+
+                                <p>El elemento &lt;style&gt; permite a los desarrolladores agrupar estilos CSS dentro
+                                    del documento. En versiones previas de HTML era necesario
+                                    especificar qué tipo de estilos serían insertados. En HTML5 los estilos por defecto
+                                    son CSS, por lo tanto no necesitamos agregar ningún
+                                    atributo en la etiqueta de apertura &lt;style&gt; .</p>
+
+                                <h3>Archivos externos</h3>
+
+                                <p>Declarar los estilos en la cabecera del documento ahorra espacio y vuelve al código
+                                    más consistente y actualizable, pero nos requiere
+                                    hacer una copia de cada grupo de estilos en todos los documentos de nuestro sitio
+                                    web. La solución es mover todos los estilos a un
+                                    archivo externo y luego utilizar el elemento &lt;link&gt; para insertar este
+                                    archivo dentro de cada documento que los necesite. Este
+                                    método nos permite cambiar los estilos por completo simplemente incluyendo un
+                                    archivo diferente. También nos permite modificar o adaptar nuestros documentos a
+                                    cada circunstancia o dispositivo.</p>
+
+                                <div class="codigo">
+                                    <code>
+                                                                &lt;!DOCTYPE html&gt;<br>
+                                                                &lt;html lang=”es”&gt;<br>
+                                                                &lt;head&gt;<br>
+                                                                &nbsp;&lt;title&gt;Este texto es un titulo del documento&lt;/title&gt;<br>
+                                                                &nbsp;&lt;link rel="stylesheet" href="misestilos.css"&gt;<br>
+                                                                <br>
+                                                                &lt;/head&gt;<br>
+                                                                &lt;body&gt;<br>
+                                                                <br>
+                                                                &lt;/body&gt;<br>
+                                                                &lt;/html&gt;<br>
+                                                            </code>
+
+                                                            
+                                                        </div>
+                                <h3>Referencias</h3>
+                    
+                                <p>Existen varios métodos para seleccionar cuáles elementos HTML serán afectados por
+                                    las reglas CSS:</p>
+                                                
+                                <ul>
+                                    <li>referencia por la palabra clave del elemento</li>
+                                    <li>referencia por el atributo id</li>
+                                    <li>referencia por el atributo class</li>
+                                </ul>
+
+                                <h3>Referencia por la palabra clave</h3>
+                                       
+                                <p>Al declarar las reglas CSS utilizando la palabra clave del elemento afectamos cada elemento de la misma clase en el documento. Por ejemplo, la siguiente regla cambiará los estilos de todos los elementos &lt;p&gt; :</p>
+
+                                <div class="codigo">
+                                    <code>
+                                            p { font-size: 20px }
+                                    </code>
+                                </div>
+
+                                <p>Todos los textos envueltos en etiquetas <p> tendrán el tamaño de 20 pixeles.</p>
+
+                                <p>Referenciando con el atributo id El atributo id es como un nombre que identifica al elemento. Esto significa que el valor de este atributo no 
+                                    puede ser duplicado. Este nombre debe ser único en todo el documento. Para referenciar un elemento en particular usando el atributo id desde 
+                                    nuestro archivo CSS la regla debe ser declarada con el símbolo # al frente del valor que usamos para identificar el elemento:</p>
+                                
+                                <div class="codigo">
+                                    <code>
+                                        #texto1 { font-size: 20px }
+                                    </code>
+                                </div>
+
+                                <p>La regla será aplicada al elemento HTML identificado con el atributo id=”texto1” . Ahora nuestro código HTML lucirá de esta manera:</p>
+
+                                <div class="codigo">
+                                        <code>
+                                                                    &lt;!DOCTYPE html&gt;<br>
+                                                                    &lt;html lang=”es”&gt;<br>
+                                                                    &lt;head&gt;<br>
+                                                                    &nbsp;&lt;title&gt;Este texto es un titulo del documento&lt;/title&gt;<br>
+                                                                    &nbsp;&lt;link rel="stylesheet" href="misestilos.css"&gt;<br>
+                                                                    <br>
+                                                                    &lt;/head&gt;<br>
+                                                                    &lt;body&gt;<br>
+                                                                    &nbsp;&lt;p id=”texto1”&gt;mi texto&lt;/p&gt;<br>
+                                                                    <br>
+                                                                    &lt;/body&gt;<br>
+                                                                    &lt;/html&gt;<br>
+                                                                </code>
+    
+                                                                
+                                                            </div>
+
+                                    <p>El resultado de este procedimiento es que cada vez que hacemos una referencia usando el identificador texto1 en nuestro archivo CSS, 
+                                        el elemento con ese valor de id será modificado, pero el resto de los elementos &lt;p&gt; , o cualquier otro elemento en el mismo 
+                                        documento, no serán afectados.</p>
+
+                                    <h1>Referenciando con el atributo class</h1>
+
+                                    <p>La mayoría del tiempo, en lugar de utilizar el atributo id para propósitos de estilos es mejor utilizar class . Este atributo es más 
+                                        flexible y puede ser asignado a cada elemento HTML en el documento que comparte un diseño similar:</p>
+
+                                    <div class="codigo">
+                                        <code>
+                                            .texto1 { font-size: 20px }
+                                        </code>
+                                    </div>
+                                
+                                    <p>Para trabajar con el atributo class, debemos declarar la regla CSS con un punto antes del nombre. La ventaja de este método es que insertar 
+                                        el atributo class con el valor texto1 será suficiente para asignar estos estilos a cualquier elemento que queramos:</p>
+
+                                    <div class="codigo">
+                                             <code>
+                                                &lt;!DOCTYPE html&gt;<br>
+                                                &lt;html lang=”es”&gt;<br>
+                                                &lt;head&gt;<br>
+                                                &nbsp;&lt;title&gt;Este texto es un titulo del documento&lt;/title&gt;<br>
+                                                &nbsp;&lt;link rel="stylesheet" href="misestilos.css"&gt;<br>
+                                                <br>
+                                                &lt;/head&gt;<br>
+                                                &lt;body&gt;<br>
+                                                &nbsp;&lt;p class=”texto1”&gt;mi texto&lt;/p&gt;<br>
+                                                &nbsp;&lt;p class=”texto1”&gt;mi texto&lt;/p&gt;<br>
+                                                <br>
+                                                &lt;/body&gt;<br>
+                                                &lt;/html&gt;<br>
+                                            </code>
+            
+                                                                        
+                                    </div>
+
+                                    <p>Los elementos &lt;p&gt; en las primeras dos líneas dentro del cuerpo del código tienen 
+                                        el atributo class con el valor texto1 . Como dijimos previamente, la misma regla puede ser aplicada a 
+                                        diferentes elementos en el mismo documento. Por lo tanto, estos dos primeros elementos comparten la misma 
+                                        regla y ambos serán afectados por el estilo del Listado 2-8. El último elemento &lt;p&gt; conserva los 
+                                        estilos por defecto otorgados por el navegador.</p>
+
+                                    
+
+                                    
+                            </div>
+                        </div>
+
+                    </article>
+
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
 </html>
