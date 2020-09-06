@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">HTML5</a>
+            <a class="navbar-brand" href="index.html">HTML5</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Html <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="html5.html">Html <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="css.html">Css</a>
@@ -43,7 +43,7 @@
         <h1>Estilos CSS y modelos de caja</h1>
         <hr>
 
-        <div class="row">
+        <div class="row mt-4">
             <div class="col-md-9">
                 <section>
 
@@ -303,7 +303,7 @@
                                     <li>referencia por el atributo class</li>
                                 </ul>
 
-                                <h3>Referencia por la palabra clave</h3>
+                                <h4>Referencia por la palabra clave</h4>
                                        
                                 <p>Al declarar las reglas CSS utilizando la palabra clave del elemento afectamos cada elemento de la misma clase en el documento. Por ejemplo, la siguiente regla cambiará los estilos de todos los elementos &lt;p&gt; :</p>
 
@@ -350,7 +350,7 @@
                                         el elemento con ese valor de id será modificado, pero el resto de los elementos &lt;p&gt; , o cualquier otro elemento en el mismo 
                                         documento, no serán afectados.</p>
 
-                                    <h1>Referenciando con el atributo class</h1>
+                                    <h4>Referenciando con el atributo class</h4>
 
                                     <p>La mayoría del tiempo, en lugar de utilizar el atributo id para propósitos de estilos es mejor utilizar class . Este atributo es más 
                                         flexible y puede ser asignado a cada elemento HTML en el documento que comparte un diseño similar:</p>
@@ -390,20 +390,424 @@
                                         regla y ambos serán afectados por el estilo del Listado 2-8. El último elemento &lt;p&gt; conserva los 
                                         estilos por defecto otorgados por el navegador.</p>
 
+                                    <p>La razón por la que debemos utilizar un punto delante del nombre de la regla es que es posible construir referencias más complejas. Por ejemplo, se puede utilizar el mismo valor para el atributo class en diferentes elementos pero asignar diferentes estilos para cada tipo:</p>
+
+                                    <div class="codigo">
+                                        <code>
+                                            p.texto1 { font-size: 20px }
+                                        </code>
+                                    </div>
+
+                                    <p>En el Listado 2-10 creamos una regla que referencia la clase llamada texto1 pero solo para los elementos de tipo &lt;p&gt;. Si cualquier otro elemento tiene el mismo valor en su atributo class no será modificado por esta regla en particular.</p>
+
+                                    <h4>Referenciando con cualquier atributo</h4>
+                                                                              
+                                    <p>Aunque los métodos de referencia estudiados anteriormente cubren un variado espectro de situaciones, a veces no son suficientes para encontrar el elemento exacto. La última versión de CSS ha incorporado nuevas formas de referenciar elementos HTML. Uno de ellas es el Selector de Atributo. Ahora podemos referenciar un elemento no solo por los atributos id y class sino también a través de cualquier otro atributo:</p>
+                                        
+                                    <div class="codigo">
+                                        <code>
+                                            p[name] { font-size: 20px }
+                                        </code>
+                                    </div>    
+                                     
+                                    <p>La regla en el Listado 2-11 cambia solo elementos &lt;p&gt; que tienen un atributo llamado name. Para imitar lo que hicimos previamente con los atributos id y class, podemos también especificar el valor del atributo:</p>
+
+                                    <div class="codigo">
+                                        <code>
+                                            p[name=”mitexto”] { font-size: 20px }
+                                        </code>
+                                    </div>  
+
+                                    <p>CSS3 permite combinar “=” con otros para hacer una selección más específica:</p>
+
+                                    <div class="codigo">
+                                        <code>
+                                            p[name^=”mi”] { font-size: 20px }<br>
+
+                                            p[name$=”mi”] { font-size: 20px }<br>
+
+                                            p[name*=”mi”] { font-size: 20px }<br>
+                                        </code>
+                                    </div>  
+
+                                    <p>Si usted conoce Expresiones Regulares desde otros lenguajes como Javascript o PHP, podrá reconocer los selectores utilizados en el Listado 2-13. En CSS3 estos selectores producen similares resultados:</p>
+
+
+                                    <ul>
+                                        <li>La regla con el selector ^= será asignada a todo elemento &lt;p&gt; que contiene un atributo name con un valor comenzado en “mi” (por ejemplo, “mitexto”, “micasa”).</li>
+                                        <li>La regla con el selector $= será asignada a todo elemento &lt;p&gt; que contiene un atributo name con un valor finalizado en “mi” (por ejemplo “textomi”, “casami”).</li>
+                                        <li>La regla con el selector *= será asignada a todo elemento &lt;p&gt; que contiene un atributo name con un valor que incluye el texto “mi” (en este caso, el texto podría también encontrarse en el medio, como en “textomicasa”).</li>
+
+
+                                    </ul>
                                     
 
+
+
+                                    <p>En estos ejemplos usamos el elemento &lt;p&gt;, el atributo name, y una cadena de texto al azar como “mi”, pero la misma técnica puede ser utilizada con cualquier atributo y valor que necesitemos. Solo tiene que escribir los corchetes e insertar entre ellos el nombre del atributo y el valor que necesita para referenciar el elemento HTML correcto.</p>
+
+
+
+
+
+                                    <h4>Referenciando con pseudo clases</h4>
+
+
+
+
+                                    <p>CSS3 también incorpora nuevas pseudo clases que hacen la selección aún más específica.</p>
+
+                                    <div class="codigo">
+                                        <code>
+                                           &lt;!DOCTYPE html&gt;<br>
+                                           &lt;html lang=”es”&gt;<br>
+                                           &lt;head&gt;<br>
+                                           &nbsp;&lt;title&gt;Este texto es un titulo del documento&lt;/title&gt;<br>
+                                           &nbsp;&lt;link rel="stylesheet" href="misestilos.css"&gt;<br>
+                                           <br>
+                                           &lt;/head&gt;<br>
+                                           &lt;body&gt;<br>
+                                           &lt;div id="wrapper"&gt;<br>
+                                           &nbsp;&lt;p class=”mitexto1”&gt;mi texto&lt;/p&gt;<br>
+                                           &nbsp;&lt;p class=”mitexto2”&gt;mi texto&lt;/p&gt;<br>
+                                           &nbsp;&lt;p class=”mitexto3”&gt;mi texto&lt;/p&gt;<br>
+                                           &nbsp;&lt;p class=”mitexto4”&gt;mi texto&lt;/p&gt;<br>
+                                           &lt;/div&gt;<br>
+                                           <br>
+                                           &lt;/body&gt;<br>
+                                           &lt;/html&gt;<br>
+                                       </code>
+                                    </div>
+       
+                                <p>Miremos por un momento el nuevo código HTML del Listado 2-14. Contiene cuatro elementos <p> que, considerando la estructura HTML, son hermanos entre sí e hijos del mismo elemento <div>.</p>
+
+
+
+                                <p>Usando pseudo clases podemos aprovechar esta organización y referenciar un elemento específico sin importar cuánto conocemos sobre sus atributos y el valor de los mismos:</p>
+                                        
+                                <div class="codigo">
+                                    <code>
+                                        p:nth-child(2){<br>
+
+                                            background: #999999;<br>
+                                            
+                                            }<br>
+                                    </code>
+                                </div>   
+
+                                <p>La pseudo clase es agregada usando dos puntos luego de la referencia y antes del su nombre. En la regla del Listado 2-15 referenciamos solo elementos <p>. Esta regla puede incluir otras referencias. Por ejemplo, podríamos escribirla como .miclase:nth-child(2) para referenciar todo elemento que es hijo de otro elemento y tiene el valor de su atributo class igual a miclase. La pseudo clase puede ser aplicada a cualquier tipo de referencia estudiada previamente.</p>
+
+
+
+                                <p>La pseudo clase nth-child() nos permite encontrar un hijo específico. Como ya explicamos, el documento HTML del Listado 2-14 tiene cuatro elementos <p> que son hermanos. Esto significa que todos ellos tienen el mismo padre que es el elemento <div>. Lo que esta pseudo clase está realmente indicando es algo como: “el hijo en la posición…” por lo que el número entre paréntesis será el número de la posición del hijo, o índice. La regla del Listado 2-15 está referenciando cada segundo elemento <p> encontrado en el documento.</p>
                                     
-                            </div>
+                                    
+                                    
+                                <p>Hágalo usted mismo: Reemplace el código en su archivo HTML por el del Listado 2-14 y abra el archivo en su navegador. Incorpore las reglas estudiadas en el Listado 2-15 dentro del archivo misestilos.css para comprobar su funcionamiento.</p>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                <p>Usando este método de referencia podemos, por supuesto, seleccionar cualquier hijo que necesitemos cambiando el número de índice. Por ejemplo, la siguiente regla tendrá impacto sólo sobre el último elemento <p> de nuestra plantilla:</p>
+                                    
+                                
+                                <div class="codigo">
+                                    <code>
+                                        p:nth-child(4){<br>
+
+                                            background: #999999;<br>
+                                            
+                                            }<br>
+                                            
+                                    </code>
+                                </div>
+                                    
+                                      
+                                <p>Como seguramente se habrá dado cuenta, es posible asignar estilos a todos los elementos creando una regla para cada uno de ellos:</p>
+
+                                <div class="codigo">
+                                    <code>
+                                        *{<br>
+
+                                            margin: 0px;<br>
+                                            
+                                            }<br>
+                                            
+                                            
+                                            
+                                            p:nth-child(1){<br>
+                                            
+                                            background: #999999;<br>
+                                            
+                                            }<br>
+                                            
+                                            p:nth-child(2){<br>
+                                            
+                                            background: #CCCCCC;<br>
+                                            
+                                            }<br>
+                                            
+                                            p:nth-child(3){<br>
+                                            
+                                            background: #999999;<br>
+                                            
+                                            }<br>
+                                            
+                                            p:nth-child(4){<br>
+                                            
+                                            background: #CCCCCC;<br>
+                                            
+                                            }<br>
+                                            
+                                    </code>
+                                        
+                                </div>
+
+                                <p>La primera regla del Listado 2-17 usa el selector universal * para asignar el mismo estilo a cada elemento del documento. Este nuevo selector representa cada uno de los elementos en el cuerpo del documento y es útil cuando necesitamos establecer ciertas reglas básicas. En este caso, configuramos el margen de todos los elementos en 0 pixeles para evitar espacios en blanco o líneas vacías como las creadas por el elemento &lt;p&gt; por defecto.</p>
+
+
+
+                                <p>En el resto del código del Listado 2-17 usamos la pseudo clase nth-child() para generar un menú o lista de opciones que son diferenciadas claramente en la pantalla por</p>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                <p>Hágalo usted mismo: Copie el último código dentro del archivo CSS y abra el documento HTML en su navegador para comprobar el efecto.</p>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                <p>Para agregar más opciones al menú, podemos incorporar nuevos elementos &lt;p&gt; en el código HTML y nuevas reglas con la pseudo clase nth-child() usando el número de índice adecuado. Sin embargo, esta aproximación genera mucho código y resulta imposible de aplicar en sitios webs con contenido dinámico. Una alternativa para obtener el mismo resultado es aprovechar las palabras clave odd y even disponibles para esta pseudo clase:</p>
+                                        
+                                    
+                                <div class="codigo">
+                                    <code>
+                                        *{<br>
+
+                                            margin: 0px;<br>
+                                            
+                                            }<br>
+                                            
+                                            p:nth-child(odd){<br>
+                                            
+                                            background: #999999;<br>
+                                            
+                                            }<br>
+                                            
+                                            p:nth-child(even){<br>
+                                            
+                                            background: #CCCCCC;<br>
+                                            
+                                            }<br>
+                                    </code>
+                                </div>
+
+                                <p>Ahora solo necesitamos dos reglas para crear la lista completa. Incluso si más adelante agregamos otras opciones, los estilos serán asignados automáticamente a cada una de ellas de acuerdo a su posición. La palabra clave odd para la pseudo clase nth-child() afecta los elementos &lt;p&gt; que son hijos de otro elemento y tienen un índice impar. La palabra clave even, por otro lado, afecta a aquellos que tienen un índice par.</p>
+
+
+
+                                <p>Existen otras importantes pseudo clases relacionadas con esta última, como first-child, last-child y only-child, algunas de ellas recientemente incorporadas. La pseudo clase first-child referencia solo el primer hijo, last-child referencia solo el último hijo, y only-child afecta un elemento siempre y cuando sea el único hijo disponible. Estas pseudo clases en particular no requieren palabras clave o parámetros, y son implementadas como en el siguiente ejemplo:</p>
+                                    
+                                    
+                                <div class="codigo">
+                                    <code>
+                                        *{<br>
+
+                                            margin: 0px;<br>
+                                            
+                                            }<br>
+                                            
+                                            p:last-child{<br>
+                                            
+                                            background: #999999;<br>
+                                            
+                                            }<br>
+                                            
+                                            
+                                    </code>
+                                </div>    
+                                    
+
+                                <p>Otra importante pseudo clase llamada not() es utilizada realizar una negación:</p>
+
+
+                                <div class="codigo">
+                                    <code>
+                                        :not(p){<br>
+
+                                            margin: 0px;<br>
+                                            
+                                            }<br>
+                                    </code>
+                                </div>
+                               </div>
+                            
+
+                               <p>La regla del Listado 2-20 asignará un margen de 0 pixeles a cada elemento del documento excepto los elementos &lt;p&gt;. A diferencia del selector universal utilizado previamente, la pseudo clase not() nos permite declarar una excepción. Los estilos en la regla creada con esta pseudo clase serán asignados a todo elemento excepto aquellos incluidos en la referencia entre paréntesis. En lugar de la palabra clave de un elemento podemos usar cualquier otra referencia que deseemos. En el próximo listado, por ejemplo, todos los elementos serán afectados excepto aquellos con el valor mitexto2 en el atributo class:</p>
+
+                               <div class="codigo">
+                                   <code>
+                                    :not(.mitexto2){<br>
+
+                                        margin: 0px;<br>
+                                        
+                                        }<br>
+                                        
+                                   </code>
+                               </div>
+
+                               <p>Cuando aplicamos la última regla al código HTML del Listado 2-14 el navegador asigna los estilos por defecto al elemento &lt;p&gt; identificado con el atributo class y el valor mitexto2 y provee un margen de 0 pixeles al resto.</p>
+
+
+
+
+
+                                <h4>Nuevos selectores</h4>
+                                
+                                
+                                
+                                
+                                <p>Hay algunos selectores más que fueron agregados o que ahora son considerados parte de CSS3 y pueden ser útiles para nuestros diseños. Estos selectores usan los símbolos >, + y ~ para especificar la relación entre elementos.</p>
+                                
+                                
+                                <div class="codigo">
+                                    <code>
+                                        div > p.mitexto2{<br>
+
+                                            color: #990000;<br>
+                                            
+                                            }<br>
+                                    </code>
+                                </div>
+
+                                <p>El selector > está indicando que el elemento a ser afectado por la regla es el elemento de la derecha cuando tiene al de la izquierda como su padre. La regla en el Listado 2-22 modifica los elementos &lt;p&gt; que son hijos de un elemento &lt;div&gt;. En este caso, fuimos bien específicos y referenciamos solamente el elemento &lt;p&gt; con el valor mitexto2 en su atributo class.</p>
+
+
+
+                                <p>El próximo ejemplo construye un selector utilizando el símbolo +. Este selector referencia al elemento de la derecha cuando es inmediatamente precedido por el de la izquierda. Ambos elementos deben compartir el mismo padre:</p>
+                                    
+                                <div class="codigo">
+                                    <code>
+                                        
+
+                                        p.mitexto2 + p{<br>
+
+                                            color: #990000;<br>
+    
+                                        }<br>
+    
+                                    </code>
+                                </div>    
+                                    
+                                <p>La regla del Listado 2-23 afecta al elemento <p> que se encuentra ubicado luego de otro elemento &lt;p&gt; identificado con el valor mitexto2 en su atributo class. Si abre en su navegador el archivo HTML con el código del Listado 2-14, el texto en el tercer elemento &lt;p&gt; aparecerá en la pantalla en color rojo debido a que este elemento <p> en particular está posicionado inmediatamente después del elemento &lt;p&gt; identificado con el valor mitexto2 en su atributo class.</p>
+
+
+
+                                <p>El último selector que estudiaremos es el construido con el símbolo ~. Este selector es similar al anterior pero el elemento afectado no necesita estar precediendo de inmediato al elemento de la izquierda. Además, más de un elemento puede ser afectado:</p>
+                                    
+                                    
+                                 <div class="codigo">
+                                     <code>
+                                         
+                                        p.mitexto2 ~ p{<br>
+
+                                            color: #990000;<br>
+                                            
+                                            }<br>
+                                            
+                                     </code>
+                                 </div>   
+                            
+                                 <p>La regla del Listado 2-24 afecta al tercer y cuarto elemento &lt;p&gt; de nuestra plantilla de ejemplo. El estilo será aplicado a todos los elementos &lt;p&gt; que son hermanos y se encuentran luego del elemento <p> identificado con el valor mitexto2 en su atributo class. No importa si otros elementos se encuentran intercalados, los elementos &lt;p&gt; en la tercera y cuarta posición aún serán afectados. Puede verificar esto último insertando un elemento <span>mitexto</span> luego del elemento <p> que tiene el valor mitexto2 en su atributo class. A pesar de este cambio solo los elementos &lt;p&gt; serán modificados por esta regla.</p>
                         </div>
 
+                    </article>
+
+                    <article class="mt-4">
+                        <div class="card sombra">
+                            <div class="card-body">
+                                <h3>Aplicando CSS a nuestra plantilla</h3> 
+
+
+
+
+                                <p>Como aprendimos más temprano en este mismo capítulo, todo elemento estructural es considerado una caja y la estructura completa es presentada como un grupo de cajas. Las cajas agrupadas constituyen lo que es llamado un Modelo de Caja.</p>
+
+
+
+                                <p>Siguiendo con los conceptos básicos de CSS, vamos a estudiar lo que es llamado el Modelo de Caja Tradicional. Este modelo has sido implementado desde la primera versión de CSS y es actualmente soportado por cada navegador en el mercado, lo que lo ha convertido en un estándar para el diseño web.</p>
+
+
+
+                                <p>Todo modelo, incluso aquellos aún en fase experimental, pueden ser aplicados a la misma estructura HTML, pero esta estructura debe ser preparada para ser afectada por estos estilos de forma adecuada. Nuestros documentos HTML deberán ser adaptados al modelo de caja seleccionado.</p>
+
+
+
+                                <p class="justificado">IMPORTANTE: El Modelo de Caja Tradicional presentado posteriormente no es una incorporación de HTML5, pero es introducido en este libro por ser el único disponible en estos momentos y posiblemente el que continuará siendo utilizado en sitios webs desarrollados en HTML5 durante los próximos años. Si usted ya conoce cómo implementarlo, siéntase en libertad de obviar esta parte del capítulo.</p>
+
+                            </div>
+                        </div>
                     </article>
 
                 </section>
 
             </div>
+
+            <div class="col-md-3">
+                <aside class="sticky-top">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <h1>Indice</h1>
+                            <hr>
+                            <h5>2.1 CSS y HTML</h5>
+
+                            <h5>2.2 Estilos y estructura</h5>
+
+                            <h6>Elementos block</h6>
+
+                            <h6>Modelos de caja</h6>
+
+
+
+                            <h5>2.3 Conceptos básicos sobre estilos</h5>
+
+                            <h6>Estilos en línea</h6>
+
+                            <h6>Estilos embebidos</h6>
+
+                            <h6>Archivos externos</h6>
+
+                            <h6>Referencias</h6>
+
+                            <h6>Referenciando con palabra clave</h6>
+
+                            <h6>Referenciando con el atributo id</h6>
+
+                            <h6>Referenciando con el atributo class</h6>
+
+                            <h6>Referenciando con cualquier atributo</h6>
+
+                            <h6>Referenciando con pseudo clases</h6>
+
+                            <h6>Nuevos selectores</h6>
+
+
+
+                            <h5>2.4 Aplicando CSS a nuestra plantilla</h5>
+                        </div>
+                    </div>
+                </aside>
+            </div>
         </div>
     </div>
 
+    <footer class="mt-4">
+        <p class="text-center">Creado por Marcos Noriega - 2020</p>
+        <p class="text-center">GitHub: <a href="https://github.com/MarcosNoriega">https://github.com/MarcosNoriega</a></p>
+    </footer>
 
 
 </body>

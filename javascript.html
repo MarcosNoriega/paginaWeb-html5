@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">HTML5</a>
+            <a class="navbar-brand" href="index.html">HTML5</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Html</a>
+                        <a class="nav-link" href="html5.html">Html</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="css.html">Css</a>
@@ -39,26 +39,526 @@
         </nav>
     </header>
 
-    <h1>Javascript</h1>
-    <hr>
-    <h3>4.1 La relevancia de Javascript</h3>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-9">
+                <section>
+                    <article>
+                        <div class="card sombra">
+                            <div class="card-body">
+                                <h1 id="javascript">Javascript</h1>
+                                <hr>
+                                <h3>4.1 La relevancia de Javascript</h3>
+                
+                                <p>HTML5 puede ser imaginado como un edificio soportado por tres grandes columnas: HTML, CSS y
+                                    Javascript. Ya hemos
+                                    estudiado los elementos
+                                    incorporados en HTML y las nuevas propiedades que hacen CSS la herramienta ideal para diseñadores.
+                                    Ahora es
+                                    momento de develar lo que
+                                    puede ser considerado como uno de los pilares más fuertes de esta especificación: Javascript.</p>
+                
+                                <p>Javascript es un lenguaje interpretado usado para múltiples propósitos pero solo considerado como un
+                                    complemento
+                                    hasta ahora. Una de las
+                                    innovaciones que ayudó a cambiar el modo en que vemos Javascript fue el desarrollo de nuevos
+                                    motores de
+                                    interpretación, creados para
+                                    acelerar el procesamiento de código. La clave de los motores más exitosos fue transformar el código
+                                    Javascript
+                                    en código máquina para
+                                    lograr velocidades de ejecución similares a aquellas encontradas en aplicaciones de escritorio.
+                                    Esta mejorada
+                                    capacidad permitió superar
+                                    viejas limitaciones de rendimiento y confirmar el lenguaje Javascript como la mejor opción para la
+                                    web.</p>
+                
+                                <p>Para aprovechar esta prometedora plataforma de trabajo ofrecida por los nuevos navegadores,
+                                    Javascript fue expandido
+                                    en relación con portabilidad e integración. A la vez, interfaces de programación de aplicaciones
+                                    (APIs) fueron incorporadas
+                                    por defecto en cada navegador para asistir al lenguaje en funciones elementales. Estas nuevas APIs
+                                    (como Web Storage,
+                                    Canvas, y otras) son interfaces para librerías incluidas en navegadores. La idea es hacer
+                                    disponible poderosas funciones
+                                    a través de técnicas de programación sencillas y estándares, expandiendo el alcance del lenguaje y
+                                    facilitando la creación
+                                    de programas útiles para la web.</p>
+                
+                
+                            </div>
+                        </div>
+                    </article>
 
-    <p>HTML5 puede ser imaginado como un edificio soportado por tres grandes columnas: HTML, CSS y Javascript. Ya hemos
-        estudiado los elementos
-        incorporados en HTML y las nuevas propiedades que hacen CSS la herramienta ideal para diseñadores. Ahora es
-        momento de develar lo que
-        puede ser considerado como uno de los pilares más fuertes de esta especificación: Javascript.</p>
+                    <article class="mt-4">
+                        <div class="card sombre">
+                            <div class="card-body">
+                                <h3 id="incorporacion">4.2 Incorporando Javascript</h3>
 
-    <p>Javascript es un lenguaje interpretado usado para múltiples propósitos pero solo considerado como un complemento
-        hasta ahora. Una de las
-        innovaciones que ayudó a cambiar el modo en que vemos Javascript fue el desarrollo de nuevos motores de
-        interpretación, creados para
-        acelerar el procesamiento de código. La clave de los motores más exitosos fue transformar el código Javascript
-        en código máquina para
-        lograr velocidades de ejecución similares a aquellas encontradas en aplicaciones de escritorio. Esta mejorada
-        capacidad permitió superar
-        viejas limitaciones de rendimiento y confirmar el lenguaje Javascript como la mejor opción para la web.</p>
+                                <p>Siguiendo los mismos lineamientos que en CSS, existen tres técnicas para incorporar código Javascript dentro de HTML. 
+                                    Sin embargo, al igual que en CSS, solo la inclusión de archivos externos es la recomendada a usar en HTML5.</p>
 
+                                <h4 id="enLinea">En línea</h4>
+
+                                <p>Esta es una técnica simple para insertar Javascript en nuestro documento que se aprovecha de atributos disponibles en elementos HTML. 
+                                    Estos atributos son manejadores de eventos que ejecutan código de acuerdo a la acción del usuario.</p>
+
+                                <p>Los manejadores de eventos más usados son, en general, los relacionados con el ratón, como por ejemplo onclick, onMouseOver, 
+                                    u onMouseOut. Sin embargo, encontraremos sitios web que implementan eventos de teclado y de la ventana, ejecutando acciones 
+                                    luego de que una tecla es presionada o alguna condición en la ventana del navegador cambia (por ejemplo, onload u onfocus).
+                                    </p>
+
+                                <div class="codigo">
+                                        <code>
+                                            &lt;!DOCTYPE html&gt;<br>
+                                            &lt;html lang=”es”&gt;<br>
+                                            &lt;head&gt;<br>
+                                            &nbsp;&lt;title&gt;Este texto es un titulo del documento&lt;/title&gt;<br>
+                                            <br>
+                                            &lt;/head&gt;<br>
+                                            &lt;body&gt;<br>
+                                            &nbsp;&lt;div id=”principal”&gt;<br>
+                                            &nbsp;&nbsp;&lt;p onclick=”alert(‘hizo clic!’)”&gt;hacer click&lt;/p&gt;<br>
+                                            &nbsp;&lt;/div&gt;<br>
+                                            <br>
+                                            &lt;/body&gt;<br>
+                                            &lt;/html&gt;<br>
+                                        </code>
+                                    
+                                </div>
+                                   
+                                <p>Usando el manejador de eventos onclick en el Listado 4-1, un código es ejecutado cada vez que el usuario hace clic con el ratón 
+                                    sobre el texto que dice “Hacer Clic”. Lo que el manejador onclick está diciendo es algo como: “cuando alguien haga clic sobre este 
+                                    elemento ejecute este código” y el código en este caso es una función predefinida en Javascript que muestra una pequeña ventana con 
+                                    el mensaje “hizo clic!”.</p>
+
+
+
+                                <p>Intente cambiar el manejador onclick por onMouseOver, por ejemplo, y verá cómo el código es ejecutado solo pasando el puntero del ratón 
+                                    sobre el elemento.</p>
+
+
+
+                                <p>El uso de Javascript dentro de etiquetas HTML está permitido en HTML5, pero por las mismas razones que en CSS, esta clase de práctica 
+                                    no es recomendable. El código HTML se extiende innecesariamente y se hace difícil de mantener y actualizar. Así mismo, el código 
+                                    distribuido sobre todo el documento complica la construcción de aplicaciones útiles.</p>
+
+
+
+                                <p>Nuevos métodos y técnicas fueron desarrollados para referenciar elementos HTML y registrar manejadores de eventos sin tener que usar código en línea (inline). Volveremos sobre esto y aprenderemos más sobre eventos y manejadores de eventos más adelante en este capítulo.</p>
+
+                                <p class="justificado">Ejercicio: Copie el código del Listado 4-1 y los siguientes códigos estudiados en este capítulo dentro de un nuevo archivo HTML. Abra el archivo en su navegador para probar cada ejemplo.</p>
+
+                                <h4 id="enbebido">Embebido</h4>
+
+                                <p>Para trabajar con códigos extensos y funciones personalizadas debemos agrupar los códigos en un mismo lugar entre etiquetas &lt;script&gt;. El elemento &lt;script&gt; actúa exactamente igual al elemento &lt;style&gt; usado para incorporar estilos CSS. Nos ayuda a organizar el código en un solo lugar, afectando a los elementos HTML por medio de referencias.</p>
+
+
+
+                                <p>Del mismo modo que con el elemento &lt;style&gt;, en HTML5 no debemos usar ningún atributo para especificar lenguaje. Ya no es necesario incluir el atributo type en la etiqueta &lt;script&gt;. HTML5 asigna Javascript por defecto.</p>
+                                        
+                                <div class="codigo">
+                                        <code>
+                                            &lt;!DOCTYPE html&gt;<br>
+                                            &lt;html lang=”es”&gt;<br>
+                                            &lt;head&gt;<br>
+                                            &nbsp;&lt;title&gt;Este texto es un titulo del documento&lt;/title&gt;<br>
+                                            &nbsp;&lt;script&gt;<br>
+                                                                                        
+                                            &nbsp;function mostraralerta() {<br>
+                                                &nbsp;    alert('hizo clic!'); <br>
+                                                &nbsp;} <br>
+                                                                                                       
+                                                &nbsp;function hacerclic() {<br>
+                                                    &nbsp;    document.getElementsByTagName('p')[0].onclick=mostraralerta; <br>
+                                                    &nbsp;} <br>
+                                                                                                    
+                                                    &nbsp;window.onload=hacerclic;<br>
+                                                                                        
+                                            &nbsp;&lt;/script&gt;
+                                            <br>
+                                            &lt;/head&gt;<br>
+                                            &lt;body&gt;<br>
+                                            &nbsp;&lt;div id=”principal”&gt;<br>
+                                            &nbsp;&nbsp;&lt;p&gt;hacer click&lt;/p&gt;<br>
+                                            &nbsp;&lt;/div&gt;<br>
+                                            <br>
+                                            &lt;/body&gt;<br>
+                                            &lt;/html&gt;<br>
+                                        </code>
+                                    
+                                </div> 
+                                
+                                <p>El elemento &lt;script&gt; y su contenido pueden ser posicionados en cualquier lugar del documento, dentro de otros elementos o entre ellos. Para mayor claridad, recomendamos siempre colocar sus códigos Javascript en la cabecera del documento (como en el ejemplo del Listado 4-2) y luego referenciar los elementos a ser afectados usando los métodos Javascript apropiados para ese propósito.</p>
+
+
+
+                                <p>Actualmente existen tres métodos disponibles para referenciar elementos HTML desde Javascript:</p>
+                                        
+                                        
+                                <ul>
+                                    <li>getElementsByTagName (usado en el Listado 4-2) referencia un elemento por su nombre o palabra clave.</li>
+
+                                
+                                    <li>getElementById referencia un elemento por el valor de su atributo id.</li>
+
+                                    <li>getElementsByClassName es una nueva incorporación que nos permite referenciar un elemento por el valor de su
+                                        atributo class.</li>
+                                </ul>
+                                        
+                                        
+                                        
+                                        
+                                <p>Incluso si seguimos la práctica recomendada (posicionar el código dentro de la cabecera del documento), una situación debe ser considerada: el código del documento es leído de forma secuencial por el navegador y no podemos referenciar un elemento que aún no ha sido creado.</p>
+                                        
+                                        
+                                        
+                                <p>En el Listado 4-2, el código es posicionado en la cabecera del documento y es leído por el navegador previo a la creación del elemento &lt;p&gt; que estamos referenciando. Si hubiésemos intentado afectar el elemento &lt;p&gt; directamente con una referencia, hubiéramos recibido un mensaje de error anunciando que el elemento no existe. Para evitar este problema, el código fue convertido a una función llamada mostraralerta(), y la referencia al elemento &lt;p&gt; junto con el manejador del evento fueron colocados en una segunda función llamada hacerclic().</p>
+                                        
+                                        
+                                        
+                                <p>Las funciones son llamadas desde la última línea del código usando otro manejador de eventos (en este caso asociado con la ventana) llamado onload. Este manejador ejecutará la función hacerclic() cuando el documento sea completamente cargado y todos los elementos creados.</p>
+                                        
+                                        
+                                        
+                                <p>Es tiempo de analizar cómo el documento del Listado 4-2 es ejecutado. Primero las funciones Javascript son cargadas (declaradas) pero no ejecutadas. Luego los elementos HTML, incluidos los elementos &lt;p&gt;, son creados. Y finalmente, cuando el documento completo es cargado en la ventana del navegador, el evento load es disparado y la función hacerclic() es llamada.</p>
+                                        
+                                        
+                                        
+                                <p>En esta función, el método getElementsByTagName referencia todos los elementos &lt;p&gt;. Este método retorna un arreglo (array) conteniendo una lista de los elementos de la clase especificada encontrados en el documento. Sin embargo, usando el índice [0] al final del método indicamos que solo queremos que el primer elemento de la lista sea retornado. Una vez que este elemento es identificado, el código registra el manejador de eventos onclick para el mismo. La función mostraralerta() será ejecutada cuando el evento click es disparado sobre este elemento mostrando el mensaje “hizo clic!”.</p>
+                                        
+                                        
+                                        
+                                <p>Puede parecer mucho código y trabajo para reproducir el mismo efecto logrado por una simple línea en el ejemplo del Listado 4-1. Sin embargo, considerando el potencial de HTML5 y la complejidad alcanzada por Javascript, la concentración del código en un único lugar y la apropiada organización representa una gran ventaja para nuestras futuras implementaciones y para hacer nuestros sitios web y aplicaciones fáciles de desarrollar y mantener.</p>
+                                        
+                                        
+                                        
+                                <p>Conceptos básicos: Una función es un código agrupado que es ejecutado solo cuando la función es invocada (activada o llamada) por su nombre. Normalmente, una función es llamada usando su nombre y algunos valores encerrados entre paréntesis (por ejemplo, hacerclic(1,2)). Una excepción a esta sintaxis es usada en el Listado 4-2. En este código no usamos paréntesis porque estamos pasando al evento solo la referencia a la función, no el resultado de su ejecución. Para aprender más sobre funciones Javascript, visite nuestro sitio web y siga los enlaces correspondientes a este capítulo.</p>
+
+                                <h4 id="archivosExternos">Archivos externos</h4>
+
+                                <p>Los códigos Javascript crecen exponencialmente cuando agregamos nuevas funciones y aplicamos algunas de las APIs mencionadas previamente. Códigos embebidos incrementan el tamaño de nuestros documentos y los hacen repetitivos (cada documento debe volver a incluir los mismos códigos). Para reducir los tiempos de descarga, incrementar nuestra productividad y poder distribuir y reusar nuestros códigos en cada documento sin comprometer eficiencia, recomendamos grabar todos los códigos Javascript en uno o más archivos externos y llamarlos usando el atributo src:</p>
+
+
+                                <div class="codigo">
+                                        <code>
+                                            &lt;!DOCTYPE html&gt;<br>
+                                            &lt;html lang=”es”&gt;<br>
+                                            &lt;head&gt;<br>
+                                            &nbsp;&lt;title&gt;Este texto es un titulo del documento&lt;/title&gt;<br>
+                                            &lt;script src=”micodigo.js”&gt;&lt;/script&gt;
+                                            <br>
+                                            &lt;/head&gt;<br>
+                                            &lt;body&gt;<br>
+                                            &nbsp;&lt;div id=”principal”&gt;<br>
+                                            &nbsp;&nbsp;&lt;p&gt;hacer click&lt;/p&gt;<br>
+                                            &nbsp;&lt;/div&gt;<br>
+                                            <br>
+                                            &lt;/body&gt;<br>
+                                            &lt;/html&gt;<br>
+                                        </code>
+                                    
+                                </div>
+                                        
+                                <p>El elemento &lt;script&gt; en el Listado 4-3 carga los códigos Javascript desde un archivo externo llamado micodigo.js. De ahora en más, podremos insertar nuestros códigos en este archivo y luego incluir el mismo en cualquier documento de nuestro sitio web que lo necesite. Desde la perspectiva del usuario, esta práctica reduce tiempos de descarga y acceso a nuestro sitio web, mientras que para nosotros simplifica la organización y facilita el mantenimiento.
+
+                                    </p>
+                                        
+                                        
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="mt-4">
+                        <div class="card sombra">
+                            <div class="card-body">
+                                <h3 id="nuevosSelectores">4.3 Nuevos Selectores</h3>
+
+                                <p>Como vimos anteriormente, los elementos HTML tienen que ser referenciados desde Javascript para ser afectados por el código. Si recuerda de previos capítulos, CSS, y especialmente CSS3, ofrece un poderoso sistema de referencia y selección que no tiene comparación con los pocos métodos provistos por Javascript para este propósito. Los métodos getElementById, getElementsByTagName y getElementsByClassName no son suficientes para contribuir a la integración que este lenguaje necesita y sostener la relevancia que posee dentro de la especificación de HTML5. Para elevar Javascript al nivel que las circunstancias requieren, nuevas alternativas debieron ser incorporadas. Desde ahora podemos seleccionar elementos HTML aplicando toda clase de selectores CSS por medio de los nuevos métodos querySelector() y querySelectorAll().</p>
+
+                                <h4 id="querySelector">querySelector()</h4>
+
+                                <p>Este método retorna el primer elemento que concuerda con el grupo de selectores especificados entre paréntesis. Los selectores son declarados usando comillas y la misma sintaxis CSS, como en el siguiente ejemplo:</p>
+
+                                <div class="codigo">
+                                    <code>
+                                            function hacerclic(){<br>
+
+                                                document.querySelector(“#principal p:first-child”).onclick=mostraralerta;<br>
+                                                
+                                                }<br>
+                                                
+                                                function mostraralerta(){<br>
+                                                
+                                                alert('hizo clic!');<br>
+                                                
+                                                }<br>
+                                                
+                                                window.onload=hacerclic;<br>
+                                            </code>
+                                </div>
+                                
+
+                                    <p>En el Listado 4-4, el método getElementsByTagName usado anteriormente ha sido reemplazado por querySelector(). Los selectores para esta consulta en particular están referenciando al primer elemento &lt;p&gt; que es hijo del elemento identificado con el atributo id y el valor main.</p>
+
+
+
+                                    <p>Debido a que ya explicamos que este método solo retorna el primer elemento encontrado, probablemente notará que la pseudo clase first-child es redundante. El método querySelector() en nuestro ejemplo retornará el primer elemento &lt;p&gt; dentro de &lt;div&gt; que es, por supuesto, su primer hijo. El propósito de este ejemplo es mostrarle que querySelector() acepta toda clase de selectores válidos CSS y ahora, del mismo modo que en CSS, Javascript también provee herramientas importantes para referenciar cada elemento en el documento.</p>
+                                            
+                                            
+                                            
+                                    <p>Varios grupos de selectores pueden ser declarados separados por coma. El método querySelector() retornará el primer elemento que concuerde con cualquiera de ellos.</p>
+                                            
+                                            
+                                            
+                                    <p>Hágalo usted mismo: Reemplace el código en el archivo micodigo.js por el provisto en el Listado 4-4 y abra el archivo HTML con el código del Listado 4-3 en su navegador para ver el método querySelector() en acción.</p>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                    <h4 id="querySelectorAll">querySelectorAll()</h4>
+                                            
+                                            
+                                            
+                                            
+                                    <p>En lugar de uno, el método querySelectorAll() retorna todos los elementos que concuerdan con el grupo de selectores declarados entre paréntesis. El valor retornado es un arreglo (array) conteniendo cada elemento encontrado en el orden en el que aparecen en el documento.</p>
+                                            
+                                            
+                                        <div class="codigo">
+                                            <code>
+                                                    function hacerclic(){<br>
+
+                                                        var lista=document.querySelectorAll(“#principal p”);<br>
+                                                        
+                                                        lista[0].onclick=mostraralerta;<br>
+                                                        
+                                                        }<br>
+                                                        
+                                                        function mostraralerta(){<br>
+                                                        
+                                                        alert('hizo clic!');<br>
+                                                        
+                                                        }<br>
+                                                        
+                                                        window.onload=hacerclic;<br>
+                                            </code>
+                                        </div>
+                                            
+
+                                                
+                                            <p>El grupo de selectores especificados en el método querySelectorAll() del Listado 4-5 encontrará cada elemento &lt;p&gt; en el documento HTML del listado 4-3 que es hijo del elemento &lt;div&gt;. Luego de la ejecución de esta primera línea, el array lista tendrá dos valores: una referencia al primer elemento &lt;p&gt; y una referencia al segundo elemento &lt;p&gt;. Debido a que el índice de cada array comienza por 0, en la próxima línea el primer elemento encontrado es referenciado usando corchetes y el valor 0 (lista[0]).</p>
+
+
+
+                                            <p>Note que este ejemplo no muestra el potencial de querySelectorAll(). Normalmente será utilizado para afectar a varios elementos y no solo uno, como en este caso. Para interactuar con una lista de elementos retornados por este método, podemos utilizar un bucle for:</p>
+                                                        
+                                                        
+                                <div class="codigo">
+                                    <code>
+                                            function hacerclic(){<br>
+
+                                                var lista=document.querySelectorAll(“#principal p”);<br>
+                                                
+                                                for(var f=0; f&lt;lista.length; f++){<br>
+                                                
+                                                lista[f].onclick=mostraralerta;<br>
+                                                
+                                                }<br>
+                                                
+                                                }<br>
+                                                
+                                                function mostraralerta(){<br>
+                                                
+                                                alert('hizo clic!');<br>
+                                                
+                                                }<br>
+                                                
+                                                window.onload=hacerclic;<br>
+                                    </code>
+                                </div>   
+                                
+                                <p>En el Listado 4-6, en lugar de seleccionar solo el primer elemento encontrado, registramos el manejador de eventos onclick para cada uno de ellos usando un bucle for. Ahora, todos los elementos &lt;p&gt; dentro de &lt;div&gt; mostrarán una pequeña ventana cuando el usuario haga clic sobre ellos.</p>
+
+
+                                <p>El método querySelectorAll(), al igual que querySelector(), puede contener uno o más grupos de selectores separados por coma. Éstos y los demás métodos estudiados pueden ser combinados para referenciar elementos a los que resulta difícil llegar. Por ejemplo, en el próximo listado, el mismo resultado del código del Listado 4-6 es logrado utilizando querySelectorAll() y getElementById() juntos:</p>
+                                        
+                                 <div class="codigo">
+                                     <code>
+                                            function hacerclic(){<br>
+
+                                                var lista=document.getElementById(‘principal’).querySelectorAll(“p”);<br>
+                                                
+                                                lista[0].onclick=mostraralerta;<br>
+                                                
+                                                }<br>
+                                                
+                                                function mostraralerta(){<br>
+                                                
+                                                alert('hizo clic!');<br>
+                                                
+                                                }<br>
+                                                
+                                                window.onload=hacerclic;<br>
+                                     </code>
+                                 </div>       
+                                        
+                                <p>Usando esta técnica podemos ver qué precisos pueden ser estos métodos. Podemos combinarlos en una misma línea y luego realizar una segunda selección con otro método para alcanzar elementos dentro de los primeros. En próximos capítulos estudiaremos algunos ejemplos más.</p>                      
+
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article class="mt-4">
+                        <div class="card sombra">
+                            <div class="card-body">
+                                <h3 id="manejadorEventos">4.4 Manejadores de eventos</h3>
+
+                                <p>Como comentamos anteriormente, el código Javascript es normalmente ejecutado luego de que el usuario realiza alguna acción. Estas acciones y otros eventos son procesados por manejadores de eventos y funciones Javascript asociadas con ellos.</p>
+
+
+
+                                <p>Existen tres diferentes formas de registrar un evento para un elemento HTML: podemos agregar un nuevo atributo al elemento, registrar un manejador de evento como una propiedad del elemento o usar el nuevo método estándar addEventListener().</p>
+
+
+
+                                <p>Conceptos básicos: En Javascript las acciones de los usuarios son llamadas eventos. Cuando el usuario realiza una acción, como un clic del ratón o la presión de una tecla, un evento específico para cada acción y cada elemento es disparado. Además de los eventos producidos por los usuarios existen también otros eventos disparados por el sistema (por ejemplo, el evento load que se dispara cuando el documento es completamente cargado). Estos eventos son manejados por códigos o funciones. El código que responde al evento es llamado manejador. Cuando registramos un manejador lo que hacemos es definir cómo nuestra aplicación responderá a un evento en particular. Luego de la estandarización del método addEventListener(), este procedimiento es usualmente llamado “escuchar al evento”, y lo que hacemos para preparar el código que responderá a ese evento es “agregar una escucha” a un elemento en particular.</p>
+
+                                <h4 id="manejadorEventosLinea">Manejadores de eventos en línea</h4>
+
+                                <p>Ya utilizamos esta técnica en el código del Listado 4-1 incluyendo el atributo onclick en el elemento <p> (revise este código para comprobar cómo se aplica). Se trata simplemente de utilizar los atributos provistos por HTML para registrar eventos para un elemento en particular. Esta es una técnica en desuso pero aun extremadamente útil y práctica en algunas circunstancias, especialmente cuando necesitamos hacer modificaciones rápidas para testeo.</p>
+
+                                <h4 id="manejadorEventosPropiedades">Manejadores de eventos como propiedades</h4>
+
+                                <p>Para evitar las complicaciones de la técnica en línea (inline), debemos registrar los eventos desde el código Javascript. Usando selectores Javascript podemos referenciar el elemento HTML y asignarle el manejador de eventos que queremos como si fuese una propiedad.</p>
+
+
+
+                                <p>En el código del Listado 4-2 encontrará esta técnica puesta en práctica. Dos manejadores de eventos fueron asignados como propiedades a diferentes elementos. El manejador de eventos onload fue registrado para la ventana usando la construcción window.onload, y el manejador de eventos onclick fue registrado para el primer elemento <p> encontrado en el documento con la línea de código document.getElementsByTagName('p')[0].onclick.</p>
+
+
+
+                                <p class="justificado"><b>Conceptos Básicos:</b> Los nombres de los manejadores de eventos son construidos agregando el prefijo on al nombre del evento. Por ejemplo, el nombre del manejador de eventos para el evento click es onclick. Cuando estamos hablando sobre onclick usualmente hacemos referencia al código que será ejecutado cuando el evento click se produzca.</p>
+
+                                <p>Antes de HTML5, esta era la única técnica disponible para usar manejadores de eventos desde Javascript que funcionaba en todos los navegadores. Algunos fabricantes de navegadores estaban desarrollando sus propios sistemas, pero nada fue adoptado por todos hasta que el nuevo estándar fue declarado. Por este motivo recomendamos utilizar esta técnica por razones de compatibilidad, pero no la sugerimos para sus aplicaciones HTML5.</p>
+
+                                <h4 id="addEventListener">El método addEventListener()</h4>
+
+                                <p>El método addEventListener() es la técnica ideal y la que es considerada como estándar por la especificación de HTML5. Este método tiene tres argumentos: el nombre del evento, la función a ser ejecutada y un valor booleano (falso o verdadero) que indica cómo un evento será disparado en elementos superpuestos.</p>
+
+                                <div class="codigo">
+                                    <code>
+                                        &lt;!DOCTYPE html&gt;<br>
+                                        &lt;html lang=”es”&gt;<br>
+                                        &lt;head&gt;<br>
+                                        &nbsp;&lt;title&gt;Este texto es un titulo del documento&lt;/title&gt;<br>
+                                        &lt;script&gt;<br>
+                                        &nbsp;function mostraralerta(){<br>
+
+                                            &nbsp;    alert('hizo clic!');<br>
+                                            
+                                            &nbsp;    }<br>
+                                            
+                                            &nbsp;    function hacerclic(){<br>
+                                            
+                                                &nbsp;    var elemento=document.getElementsByTagName('p')[0];<br>
+                                            
+                                                &nbsp;    elemento.addEventListener(‘click’, mostraralerta, false);<br>
+                                            
+                                                &nbsp;    }<br>
+                                            
+                                            window.addEventListener(‘load’, hacerclic, false);<br>
+                                        &lt;/script&gt;
+                                        <br>
+                                        &lt;/head&gt;<br>
+                                        &lt;body&gt;<br>
+                                        &nbsp;&lt;div id=”principal”&gt;<br>
+                                        &nbsp;&nbsp;&lt;p&gt;hacer click&lt;/p&gt;<br>
+                                        &nbsp;&nbsp;&lt;p&gt;No puedes hacer click&lt;/p&gt;<br>
+                                        &nbsp;&lt;/div&gt;<br>
+                                        <br>
+                                        &lt;/body&gt;<br>
+                                        &lt;/html&gt;<br>
+                                    </code>
+                                
+                                </div>
+
+                                <p>El Listado 4-8 presenta el mismo código que el Listado 4-2 pero ahora una escucha fue agregada para cada evento usando el método addEventListener(). Para organizar el código en la función hacerclic(), asignamos la referencia al elemento a una variable llamada elemento y luego agregamos la escucha para el evento click usando esa variable.</p>
+
+
+
+                                <p>La sintaxis del método addEventListener() es la mostrada en el Listado 4-8. El primer atributo es el nombre del evento. El segundo es la función a ser ejecutada, la cual puede ser una referencia a una función (como en este caso) o una función anónima. El tercer atributo especificará, usando true (verdadero) o false (falso), cómo múltiples eventos serán disparados. Por ejemplo, si estamos escuchando al evento click en dos elementos que se encuentran anidados (uno dentro de otro), cuando el usuario hace clic sobre estos elementos dos eventos click son disparados en un orden que depende de este valor. Si el atributo es declarado como true para uno de los elementos, entonces ese evento será considerado primero y el otro luego. Normalmente el valor false es el más adecuado para la mayoría de las situaciones.</p>
+
+
+
+                                <p>Conceptos básicos: Funciones anónimas son funciones dinámicamente declaradas y que no tienen nombre (por esto son llamadas “anónimas”). Esta clase de funciones son extremadamente útiles en Javascript, nos ayudan a organizar el código y no sobre poblar el objeto global con funciones independientes. Usaremos funciones anónimas con frecuencia en los siguientes capítulos.</p>
+
+
+
+
+
+                                <p>Incluso cuando los resultados de aplicar esta técnica y la anterior son similares, addEventListener() nos permite agregar tantas escuchas como necesitemos para el mismo elemento. Esta distinción le otorga a addEventListener() una ventaja sobre el resto, convirtiéndola en la técnica ideal para aplicaciones HTML5.</p>
+
+
+
+                                <p>Debido a que los eventos son la clave para sitios webs y aplicaciones interactivas, varios fueron agregados en la especificación de HTML5. En próximos capítulos estudiaremos cada uno de estos nuevos eventos y el entorno en el cual trabajan.</p>
+
+
+
+                            </div>
+                        </div>
+                    </article>
+                        
+                </section>
+                   
+            </div>
+
+            <div class="col-md-3">
+                <aside class="sticky-top">
+                    <div class="card bg-dark text-white">
+                        <div class="card-body">
+                            <h1>Indice</h1>
+                            <hr>
+                            <h5><a href="#javascript">4.1 La relevancia de Javascript</a></h4>
+
+                            <h5><a href="#incorporacion">4.2 Incorporando Javascript</a></h4>
+
+                            <h6><a href="#enLinea">&nbsp;&nbsp;&nbsp;&nbsp;En línea</a></h5>
+
+                            <h6><a href="#enbebido">&nbsp;&nbsp;&nbsp;&nbsp;Embebido</a></h5>
+
+                            <h6><a href="#archivosExternos">&nbsp;&nbsp;&nbsp;&nbsp;Archivos externos</a></h5>
+
+
+
+                            <h5><a href="#nuevosSelectores">4.3 Nuevos Selectores</a></h4>
+
+                            <h6><a href="#querySelector">&nbsp;&nbsp;&nbsp;&nbsp;querySelector()</a></h5>
+
+                            <h6><a href="#querySelectorAll">&nbsp;&nbsp;&nbsp;&nbsp;querySelectorAll()</a></h5>
+
+
+
+                            <h5><a href="#manejadorEventos">4.4 Manejadores de eventos</a></h4>
+
+                            <h6><a href="#manejadorEventosLinea">&nbsp;&nbsp;&nbsp;&nbsp;Manejadores de eventos en línea</a></h5>
+
+                            <h6><a href="#manejadorEventosPropiedades">&nbsp;&nbsp;&nbsp;&nbsp;Manejadores de eventos como propiedades</a></h5>
+
+                            <h6><a href="#addEventListener">&nbsp;&nbsp;&nbsp;&nbsp;El método addEventListener()</a></h5>
+
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-4">
+        <p class="text-center">Creado por Marcos Noriega - 2020</p>
+        <p class="text-center">GitHub: <a href="https://github.com/MarcosNoriega">https://github.com/MarcosNoriega</a></p>
+    </footer>
 
 </body>
 </html>
