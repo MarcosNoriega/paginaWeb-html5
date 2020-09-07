@@ -34,6 +34,9 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="adivinanza.html">Actividad</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -67,7 +70,8 @@
                           <input type="text" name="" id="adivinanza" class="form-control" placeholder="Ingrese su adivinanza">
                         </div>
                         <div class="modal-footer">
-                          <button class="btn btn-success" onclick="comprobar()">Comprobar</button>
+                          <button class="btn btn-warning" id="salir" onclick="inicio()" data-dismiss="modal" aria-label="Close">Salir</button>
+                          <button class="btn btn-success" id="comprobar" onclick="comprobar()">Comprobar</button>
                           <button class="btn btn-success" id="reintentar" onclick="inicio()">Reintentar</button>
                         </div>
                       </div>

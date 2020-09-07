@@ -22,7 +22,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="html5.html">Html</a>
                     </li>
                     <li class="nav-item">
@@ -34,6 +34,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="adivinanza.html">Actividad</a>
                     </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -41,54 +44,58 @@
 
     <div class="container mt-4">
         <section>
-            <div class="jumbotron sombra">
-                <h1 class="display-4">Bienvenidos al sitio web</h1>
-                <p class="lead">Hola soy Marcos Noriega, bienvenidos a este sitio web. El cual fue creado con el objetivo de aprender de las tecnologías que conforman el html5.</p>
-                <p class="lead">Bibliografia que complementaron con el contenido de este sitio:</p> 
-                <ul>
-                    <li>"El Gran Libro de HTML5, Css3 y javascript" escrito por J.D. Gauchat</li>
-                </ul>
+                <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="card sombra">
+                                <div class="card-header">
+                                    <h5>Contacto</h5>
+                                </div>
 
-                <div class="row">
-                    <div class="col-md-4">
-                        <a href="html5.html">
-                            <div class="card">
-                                <img src="/img/html.png" class="card-img-top" height="300px" alt="html5">
-                        
                                 <div class="card-body">
-                                    <h1 class="text-center">HTML</h1>
+                                    <form action="" class="was-validated">
+                                        <div class="form-group">
+                                            <label for="">Nombre</label>
+                                            <input type="text" maxlength="20" class="form-control" required>
+                                            <div class="invalid-feedback">
+                                                El nombre es requerido
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="">Apellido</label>
+                                            <input type="text" maxlength="20" class="form-control" required>
+                                            <div class="invalid-feedback">
+                                                El apellido es requerido
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="">Mail</label>
+                                            <input type="email" maxlength="20" class="form-control" required>
+                                            <div class="invalid-feedback">
+                                                El mail es requerido. formato no valido
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="">Mensaje</label>
+                                            <textarea name="" id="" cols="30" rows="10" class="form-control"
+                                                required></textarea>
+                                            <div class="invalid-feedback">
+                                                El mensaje es requerido
+                                            </div>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-success">Enviar</button>
+                                    </form>
                                 </div>
                             </div>
-                        </a>
-                    </div>
 
-                    <div class="col-md-4">
-                        <a href="css.html">
-                            <div class="card">
-                                <img src="/img/css.png" class="card-img-top" height="300px" alt="css3">
-                        
-                                <div class="card-body">
-                                    <h1 class="text-center">Css</h1>
-                                </div>
-                            </div>
-                        </a>
-                        
+                        </div>
                     </div>
-
-                    <div class="col-md-4">
-                        <a href="javascript.html">
-                            <div class="card">
-                                <img src="/img/javaScript.png" class="card-img-top" height="300px" alt="javascript">
-                        
-                                <div class="card-body">
-                                    <h1 class="text-center">Javascript</h1>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
         </section>
+        
+
     </div>
 
     <footer class="mt-4">

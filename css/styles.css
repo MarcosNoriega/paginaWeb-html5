@@ -28,11 +28,11 @@ body {
     position: fixed;
 }
 
-.indice h4, h5 {
+.indice h4, .indice h5, .indice h6 {
     color: white;
 }
 
-.indice h4:hover, h5:hover {
+.indice h4:hover, .indice h5:hover, .indice h6:hover {
     color: black;
     background-color:wheat;
     padding-left: 5px;
@@ -53,3 +53,6 @@ footer {
     min-height: 60vh;
 }
 
+.text-small {
+    font-size: 15px;
+}

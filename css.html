@@ -34,6 +34,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="adivinanza.html">Actividad</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -50,7 +53,7 @@
                     <article>
                         <div class="card sombra">
                             <div class="card-body">
-                                <h3>2.1 CSS y HTML</h3>
+                                <h3 id="css">2.1 CSS y HTML</h3>
                                 <p>Oficialmente CSS nada tiene que ver con HTML5. CSS no es parte de la especificación
                                     y nunca lo fue. Este lenguaje es, de hecho,
                                     un complemento desarrollado para superar las más satisfacer las demandas de
@@ -95,7 +98,7 @@
                         <div class="card sombra mt-4">
 
                             <div class="card-body">
-                                <h3>2.2 Estilos y estructura </h3>
+                                <h3 id="estiloEstructura">2.2 Estilos y estructura </h3>
                                 <p>A pesar de que cada navegador garantiza estilos por defecto para cada uno de
                                     los elementos HTML, estos estilos no necesariamente satisfacen los requerimientos
                                     de cada diseñador.
@@ -105,7 +108,7 @@
                                     organización y el efecto
                                     visual que realmente desean.</p>
 
-                                <h4>Elementos block</h4>
+                                <h4 id="elemBlock">Elementos block</h4>
 
                                 <p>Con respecto a la estructura, básicamente cada navegador ordena los elementos por
                                     defecto de acuerdo
@@ -141,7 +144,7 @@
                                     </div>
                                 </div>
 
-                                <h4>Modelos de caja</h4>
+                                <h4 id="modeloCaja">Modelos de caja</h4>
 
                                 <p>Para aprender cómo podemos crear nuestra propia organización de los elementos en
                                     pantalla, debemos primero
@@ -182,7 +185,7 @@
                     <article class="mt-4">
                         <div class="card sombra">
                             <div class="card-body">
-                                <h3>2.3 Conceptos básicos sobre estilos</h3>
+                                <h3 id="conseptoBasico">2.3 Conceptos básicos sobre estilos</h3>
 
                                 <p>Antes de comenzar a insertar reglas CSS en nuestro archivo de estilos y aplicar un
                                     modelo de caja, debemos revisar los conceptos básicos
@@ -195,7 +198,7 @@
                                     Para cambiar esto, podemos sobrescribir estos estilos con los nuestros usando
                                     diferentes técnicas.</p>
 
-                                <h3>Estilos en línea</h3>
+                                <h3 id="estilosLinea">Estilos en línea</h3>
 
                                 <p>Una de las técnicas más simples para incorporar estilos CSS a un documento HTML es
                                     la de asignar los estilos dentro de las etiquetas por medio del atributo <b>style</b>.</p>
@@ -233,7 +236,7 @@
                                     de los elementos &lt;p&gt; debería ser de 24 pixeles. Tendría que modificar cada
                                     estilo en cada etiqueta &lt;p&gt; en el documento completo.</p>
 
-                                <h3>Estilos embebidos</h3>
+                                <h3 id="estilosEmbebidos">Estilos embebidos</h3>
 
                                 <p>Una mejor alternativa es insertar los estilos en la cabecera del documento y luego
                                     usar referencias para afectar los elementos HTML correspondientes:</p>
@@ -263,7 +266,7 @@
                                     son CSS, por lo tanto no necesitamos agregar ningún
                                     atributo en la etiqueta de apertura &lt;style&gt; .</p>
 
-                                <h3>Archivos externos</h3>
+                                <h3 id="archivoExternos">Archivos externos</h3>
 
                                 <p>Declarar los estilos en la cabecera del documento ahorra espacio y vuelve al código
                                     más consistente y actualizable, pero nos requiere
@@ -292,7 +295,7 @@
 
                                                             
                                                         </div>
-                                <h3>Referencias</h3>
+                                <h3 id="referencias">Referencias</h3>
                     
                                 <p>Existen varios métodos para seleccionar cuáles elementos HTML serán afectados por
                                     las reglas CSS:</p>
@@ -303,7 +306,7 @@
                                     <li>referencia por el atributo class</li>
                                 </ul>
 
-                                <h4>Referencia por la palabra clave</h4>
+                                <h4 id="referenciaPalabraClave">Referencia por la palabra clave</h4>
                                        
                                 <p>Al declarar las reglas CSS utilizando la palabra clave del elemento afectamos cada elemento de la misma clase en el documento. Por ejemplo, la siguiente regla cambiará los estilos de todos los elementos &lt;p&gt; :</p>
 
@@ -315,7 +318,9 @@
 
                                 <p>Todos los textos envueltos en etiquetas <p> tendrán el tamaño de 20 pixeles.</p>
 
-                                <p>Referenciando con el atributo id El atributo id es como un nombre que identifica al elemento. Esto significa que el valor de este atributo no 
+                                <h4 id="referenciaAtributoId">Referenciando con el atributo id</h4>
+
+                                <p>El atributo id es como un nombre que identifica al elemento. Esto significa que el valor de este atributo no 
                                     puede ser duplicado. Este nombre debe ser único en todo el documento. Para referenciar un elemento en particular usando el atributo id desde 
                                     nuestro archivo CSS la regla debe ser declarada con el símbolo # al frente del valor que usamos para identificar el elemento:</p>
                                 
@@ -350,7 +355,7 @@
                                         el elemento con ese valor de id será modificado, pero el resto de los elementos &lt;p&gt; , o cualquier otro elemento en el mismo 
                                         documento, no serán afectados.</p>
 
-                                    <h4>Referenciando con el atributo class</h4>
+                                    <h4 id="referenciaAtributoClase">Referenciando con el atributo class</h4>
 
                                     <p>La mayoría del tiempo, en lugar de utilizar el atributo id para propósitos de estilos es mejor utilizar class . Este atributo es más 
                                         flexible y puede ser asignado a cada elemento HTML en el documento que comparte un diseño similar:</p>
@@ -400,7 +405,7 @@
 
                                     <p>En el Listado 2-10 creamos una regla que referencia la clase llamada texto1 pero solo para los elementos de tipo &lt;p&gt;. Si cualquier otro elemento tiene el mismo valor en su atributo class no será modificado por esta regla en particular.</p>
 
-                                    <h4>Referenciando con cualquier atributo</h4>
+                                    <h4 id="referenciaCualquierAtrubuto">Referenciando con cualquier atributo</h4>
                                                                               
                                     <p>Aunque los métodos de referencia estudiados anteriormente cubren un variado espectro de situaciones, a veces no son suficientes para encontrar el elemento exacto. La última versión de CSS ha incorporado nuevas formas de referenciar elementos HTML. Uno de ellas es el Selector de Atributo. Ahora podemos referenciar un elemento no solo por los atributos id y class sino también a través de cualquier otro atributo:</p>
                                         
@@ -450,7 +455,7 @@
 
 
 
-                                    <h4>Referenciando con pseudo clases</h4>
+                                    <h4 id="referenciaPseudoClases">Referenciando con pseudo clases</h4>
 
 
 
@@ -665,7 +670,7 @@
 
 
 
-                                <h4>Nuevos selectores</h4>
+                                <h4 id="nuevosSelectores">Nuevos selectores</h4>
                                 
                                 
                                 
@@ -759,44 +764,41 @@
             <div class="col-md-3">
                 <aside class="sticky-top">
                     <div class="card bg-dark text-white">
-                        <div class="card-body">
-                            <h1>Indice</h1>
+                        <div class="card-body indice">
+                            <h2>Indice</h2>
                             <hr>
-                            <h5>2.1 CSS y HTML</h5>
+                            <a href="#css"><h5>2.1 CSS y HTML</h5></a>
 
-                            <h5>2.2 Estilos y estructura</h5>
+                            <a href="#estiloEstructura"><h5>2.2 Estilos y estructura</h5></a>
 
-                            <h6>Elementos block</h6>
+                            <a href="#elemBlock"><h6 class="text-small">Elementos block</h6></a>
 
-                            <h6>Modelos de caja</h6>
-
-
-
-                            <h5>2.3 Conceptos básicos sobre estilos</h5>
-
-                            <h6>Estilos en línea</h6>
-
-                            <h6>Estilos embebidos</h6>
-
-                            <h6>Archivos externos</h6>
-
-                            <h6>Referencias</h6>
-
-                            <h6>Referenciando con palabra clave</h6>
-
-                            <h6>Referenciando con el atributo id</h6>
-
-                            <h6>Referenciando con el atributo class</h6>
-
-                            <h6>Referenciando con cualquier atributo</h6>
-
-                            <h6>Referenciando con pseudo clases</h6>
-
-                            <h6>Nuevos selectores</h6>
+                            <a href="#modeloCaja"><h6 class="text-small">Modelos de caja</h6></a>
 
 
 
-                            <h5>2.4 Aplicando CSS a nuestra plantilla</h5>
+                            <a href="#conseptoBasico"><h5>2.3 Conceptos básicos sobre estilos</h5></a>
+
+                            <a href="#estilosLinea"><h6 class="text-small">Estilos en línea</h6></a>
+
+                            <a href="#estilosEmbebidos"><h6 class="text-small">Estilos embebidos</h6></a>
+
+                            <a href="#archivoExternos"><h6 class="text-small">Archivos externos</h6></a>
+
+                            <a href="#referencias"><h6 class="text-small">Referencias</h6></a>
+
+                            <a href="#referenciaPalabraClave"><h6 class="text-small">Referenciando con palabra clave</h6></a>
+
+                            <a href="#referenciaAtributoId"><h6 class="text-small">Referenciando con el atributo id</h6></a>
+
+                            <a href="#referenciaAtributoClase"><h6 class="text-small">Referenciando con el atributo class</h6></a>
+
+                            <a href="#referenciaCualquierAtrubuto"><h6 class="text-small">Referenciando con cualquier atributo</h6></a>
+
+                            <a href="#referenciaPseudoClases"><h6 class="text-small">Referenciando con pseudo clases</h6></a>
+
+                            <a href="#nuevosSelectores"><h6 class="text-small">Nuevos selectores</h6></a>
+
                         </div>
                     </div>
                 </aside>
